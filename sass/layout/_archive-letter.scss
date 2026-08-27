@@ -1,0 +1,187 @@
+@use "../global/" as *;
+.archive-letter__body {
+    width: calc((1320/1440)*100%);
+    max-width: 1320px;
+    margin-top: 120px;
+    margin-inline: auto;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: center;
+    gap: calc((32/1320)*100%);
+    @include mq(sp){
+        display: block;
+        width: calc(345/375)*100%;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+}
+.archive-letter__body-area {
+    width: calc(960/1320)*100%;
+    @include mq(sp){
+        width: 100%;
+    }
+}
+.search {
+    height: 85px;
+}
+.archive-letter__list {
+    border-top: 2px solid $text;
+    @include mq(sp){
+        border-top: 1px solid $text;
+    }
+}
+.archive-letter__list-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 32px;
+    @include mq(sp){
+        gap: 20px;
+    }
+}
+.archive-letter__item {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 20px;
+    height: 280px;
+    @include mq(tab){
+    }
+    @include mq(sp){
+        width: calc((300/345)*100%);
+        margin-inline: auto;
+        height: auto;
+        max-width: 300px;
+    }
+}
+.archive-letter__item--img {
+    width: 100%;
+    height: 135px;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; 
+
+}
+.archive-letter__item--txt-area {
+    padding: 12px;
+    height: 144px;
+    position: relative;
+}
+.archive-letter__item--ttl {
+    font-size: 18px;
+    font-family: $kosugi-maru;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    line-height: 1.5;
+    color: $second-text;
+    @include mq(sp){
+        font-size: 16px;
+    }
+}
+.archive-letter__item--txt {
+    font-size: 16px;
+    font-family: $kosugi-maru;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    line-height: 1.5;
+    color: $second-text;
+    margin-top: 12px;
+    @include mq(sp){
+        font-size: 14px;
+    }
+}
+.archive-letter__item--time {
+    font-size: 14px;
+    font-family: $kosugi-maru;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    line-height: 1.5;
+    color: $second-text;
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    @include mq(sp){
+        margin-bottom: 12px;
+        font-size: 12px;
+    }
+}
+.archive-letter__cat {
+    width: calc((328/1320)*100%);
+    border-left: 2px solid $text;
+    padding-top: 12px;
+    padding-left: 24px;
+    @include mq(sp){
+        width: 100%;
+        border-left: 0;
+        border-top: 1px solid $text;
+        padding: 12px;
+        margin-top: 32px;
+    }
+}
+.archive-letter__cat--ttl {
+    font-size: 24px;
+    font-family: $kosugi-maru;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    line-height: 1.5;
+    @include mq(sp){
+        font-size: 20px;
+    }
+}
+.archive-letter__cat--area {
+    margin-top: 10px;
+}
+
+.archive-letter__cat--year {
+    font-size: 16px;
+    font-family: $kosugi-maru;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 18px;//ピンクの線を顧慮したpx
+    @include mq(sp){
+        font-size: 14px;
+    }
+}
+.archive-letter__cat--year::before{
+    content: "";
+    width: 4px;
+    height: 24px;
+    border-radius: 2px;
+    background-color: $hover-color;
+    position: absolute;
+    left: 4px;
+    @include mq(sp){
+        height: 21px;
+    }
+}
+.archive-letter__month-area {
+    margin-top: 10px;
+    padding-left: 8px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 12px 18px;
+    flex-wrap: wrap;
+}
+.archive-letter__month--txt {
+    background-color: #fff;
+    color: $text;
+    padding: 4px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: $kosugi-maru;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    @include mq(sp){
+        font-size: 12px;
+    }
+}
+.archive-letter__page-nation {
+    margin-top: 32px;
+    margin-inline: auto;
+}

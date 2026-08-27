@@ -1,0 +1,266 @@
+<?php
+/* 
+Template Name: recruitページ
+*/ 
+?>
+<?php get_header(); ?>
+<div class="single-introduction inner">
+            <div class="page__ttl-area">
+                <div class="page__ttl-area--area">
+                    <img loading="lazy" class="page__ttl-area--img" src="<?php echo get_template_directory_uri(); ?>/img/page-heading.webp" alt="ページのタイトルの背景画像" width="1080" height="160">
+                    <img loading="lazy" class="page__ttl-area--sp-img" src="<?php echo get_template_directory_uri(); ?>/img/page-heading-sp.webp" alt="ページのタイトルの背景画像" width="345" height="120">
+                    <div class="page__ttl-are--txta-area">
+                        <h1 class="page__ttl-are--ttl fadeUpTarget">採用情報</h1>
+                        <p class="page__ttl-are--en fadeUpTarget">Recruit</p>
+                    </div>
+                </div>
+                <?php get_template_part('breadcrumb'); ?>
+            </div>
+            <div class="recruit">
+                <section>
+                    <div class="motto">
+                        <div class="ttl-area">
+                            <div class="ttl-area__logo fadeUpTarget">
+                                <img loading="lazy" class="welcom__logo--img" src="<?php echo get_template_directory_uri(); ?>/img/section-heading__icon.webp" alt="各セクションのアイコン" width="108" height="108">
+                            </div>
+                            <h2 class="ttl-area__ttl fadeUpTarget">
+                                たいせつにしていること
+                            </h2>
+                            <p class="ttl-area__en fadeUpTarget">
+                                Motto
+                            </p>
+                        </div>
+                        <div class="motto__body">
+                            <div class="motto__box fadeUpTarget">
+                                <img loading="lazy" class="motto__box--img" src="<?php echo get_template_directory_uri(); ?>/img/Group 85.webp" alt="花を渡す子供" width="480" height="320">
+                                <div class="motto__txt-area">
+                                    <div class="motto__ttl-area">
+                                        <img loading="lazy" class="motto__ttl-area--img" src="<?php echo get_template_directory_uri(); ?>/img/Rectangle 49.webp" alt="桜のマーク" width="24" height="24">
+                                        <h3 class="motto__ttl-area--ttl">子ども主体の保育</h3>
+                                    </div>
+                                    <p class="motto__txt-area--txt">
+                                        変化に富んだ現代において、子どもたち一人ひとりの“個性”と“未来を切り拓く力”を育むため、子ども主体の豊かな保育を実践しています。<br>
+                                        子どもは一人ひとりが可能性にあふれた有能な学び手。<br>
+                                        保育者はさまざまなアイデアを出し合い、子どもたちのやりたいこと、興味があることを最大限に引き出します。<br>
+                                        単に知識を教えるのではなく、自ら取り組む楽しさから学びへの意欲を呼び起こす、非認知能力に主眼を置いた取り組みを進めています。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="motto__box fadeUpTarget">
+                                <img loading="lazy" class="motto__box--img" src="<?php echo get_template_directory_uri(); ?>/img/Rectangle 36.webp" alt="幼稚園の教室の様子" width="480" height="320">
+                                <div class="motto__txt-area">
+                                    <div class="motto__ttl-area">
+                                        <img loading="lazy" class="motto__ttl-area--img" src="<?php echo get_template_directory_uri(); ?>/img/Rectangle 49.webp" alt="桜のマーク" width="24" height="24">
+                                        <h3 class="motto__ttl-area--ttl">自由な風土</h3>
+                                    </div>
+                                    <p class="motto__txt-area--txt">
+                                        保育者が思い思いの先進的な保育を実践できる、自由度の高さが桜のこもれびの特長。古い慣習にとらわれることなく誰もが意見を発信できる、風通しの良い園づくりを行っています。<br>
+                                        園を創るのは保育者一人ひとりの個性。<br>
+                                        楽しく仲間と助け合いながらアイデアを実現できる風土を大事にしています。<br>
+                                        一方で、本部部門には専門家との共創や優れた保育の実践例を体系化する仕組みがあり、本部と連携することでさらに豊かな保育を実践することができます。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="motto__box fadeUpTarget">
+                                <img loading="lazy" class="motto__box--img" src="<?php echo get_template_directory_uri(); ?>/img/Rectangle 48.webp" alt="赤ちゃんと話す先生" width="480" height="320">
+                                <div class="motto__txt-area">
+                                    <div class="motto__ttl-area">
+                                        <img loading="lazy" class="motto__ttl-area--img" src="<?php echo get_template_directory_uri(); ?>/img/Rectangle 49.webp" alt="桜のマーク" width="24" height="24">
+                                        <h3 class="motto__ttl-area--ttl">ワークライフバランス</h3>
+                                    </div>
+                                    <p class="motto__txt-area--txt">
+                                        大事にしているのは「安心して働き続けていける会社」であること。<br>
+                                        桜のこもれびでは、働き方の多様化や学びの支援など、<br>
+                                        ワークライフバランスを大切にした環境づくりに努めています。<br>
+                                        働く人を大事にすることが、質の高い保育につながると考えています。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="requirement">
+                        <div class="ttl-area">
+                            <div class="ttl-area__logo fadeUpTarget">
+                                <img loading="lazy" class="welcom__logo--img" src="<?php echo get_template_directory_uri(); ?>/img/light-heading-icon.webp" alt="各セクションのアイコン" width="108" height="108">
+                            </div>
+                            <h2 class="ttl-area__ttl fadeUpTarget">
+                                募集要項
+                            </h2>
+                            <p class="ttl-area__en fadeUpTarget">
+                                Requirements
+                            </p>
+                        </div>
+                        <div class="requirement__body">
+                            <ul class="requirement__list">
+                                <li class="recruit__item fadeUpTarget">
+                                    <p class="recruit__item--left">勤務地</p>
+                                    <div class="recruit__item--right">
+                                        <p class="recruit__right--txt">
+                                            桜のこもれびキッズランドの各園のいずれか<br>
+                                            <span class="recruit__right--txt-span">※ご希望の勤務地やお住まいの住所から近い園を優先的にご案内します。</span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="recruit__item fadeUpTarget">
+                                    <p class="recruit__item--left">勤務時間</p>
+                                    <div class="recruit__item--right">
+                                        <p class="recruit__right--txt">
+                                            7:00～18:30のシフト制（延長時間あり）<br>
+                                            9h拘束、実働8時間<br>
+                                            出勤する時間と曜日で基本給が変わります
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="recruit__item fadeUpTarget">
+                                    <p class="recruit__item--left">応募資格</p>
+                                    <div class="recruit__item--right">
+                                        <p class="recruit__right--txt">
+                                            資格をお持ちの方。<br>
+                                            <span class="recruit__right--txt-span">
+                                                ※資格取得見込みの方はご相談ください。
+                                            </span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="recruit__item fadeUpTarget">
+                                    <p class="recruit__item--left">処遇</p>
+                                    <div class="recruit__item--right">
+                                        <p class="recruit__right--txt">
+                                            月給　20万～25万（各種手当含む）<br>
+                                            時給制　1120円～1450円　（勤務時間・勤務曜日は相談可）<br>
+                                            勤務シフトは常勤・非常勤併せて100パターン以上あります。あなたの希望に合う勤務時間を選んで働けます。
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="recruit__item fadeUpTarget">
+                                    <p class="recruit__item--left">賞与</p>
+                                    <div class="recruit__item--right">
+                                        <p class="recruit__right--txt-small">
+                                            年2回※月給制の方に限ります。<br>
+                                            期末賞与：対象年度の業績に応じて支給
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="recruit__item fadeUpTarget">
+                                    <p class="recruit__item--left">休日</p>
+                                    <div class="recruit__item--right">
+                                        <p class="recruit__right--txt-small">
+                                            土日祝日<br>
+                                            または<br>
+                                            月間10日を選べます。
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="recruit__item fadeUpTarget">
+                                    <p class="recruit__item--left">保険</p>
+                                    <div class="recruit__item--right">
+                                        <p class="recruit__right--txt">
+                                            厚生年金・健康保険・雇用保険・労災保険　完備
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="recruit__item fadeUpTarget">
+                                    <p class="recruit__item--left">手当</p>
+                                    <div class="recruit__item--right">
+                                        <p class="recruit__right--txt">
+                                            延長保育手当・皆勤手当・担当手当など
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="recruit__item fadeUpTarget">
+                                    <p class="recruit__item--left">昇給</p>
+                                    <div class="recruit__item--right">
+                                        <p class="recruit__right--txt">
+                                            年一回（業績評価による）
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="recruit__item fadeUpTarget">
+                                    <p class="recruit__item--left">休暇</p>
+                                    <div class="recruit__item--right">
+                                        <p class="recruit__right--txt">
+                                            年末年始・産前産後休暇・育児休暇・看護休暇制度あり
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="recruit__item fadeUpTarget">
+                                    <p class="recruit__item--left">その他</p>
+                                    <div class="recruit__item--right">
+                                        <p class="recruit__right--txt">
+                                            交通費全額支給。予防接種補助など福利厚生充実。
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="faq">
+                        <div class="ttl-area">
+                            <div class="ttl-area__logo fadeUpTarget">
+                                <img loading="lazy" class="welcom__logo--img" src="<?php echo get_template_directory_uri(); ?>/img/faq-heading__icon.png" alt="各セクションのアイコン" width="108" height="108">
+                            </div>
+                            <h2 class="ttl-area__ttl fadeUpTarget">
+                                よくある質問
+                            </h2>
+                            <p class="ttl-area__en fadeUpTarget">
+                                FAQ
+                            </p>
+                        </div>
+                        <div class="faq__body">
+                            <ul class="accordion-area">
+                                <li class="accordion-area__item">
+                                    <h3 class="accordion-area__item--ttl fadeUpTarget">
+                                        <span class="accordion-area__item--Q">Q</span>
+                                        スタッフの資格や経験について教えてください。
+                                        <i class="fa fa-play"></i>
+                                    </h3>
+                                    <div class="accordion-area__item--box">
+                                        <p class="accordion-area__txt fadeUpTarget">
+                                            <span>A</span>
+                                            当園のスタッフは、保育士や幼稚園教諭など、保育に関する専門的な資格を持つ人材です。また、多彩な経験を持ち、子どもたちとの信頼関係を築きながら、安心して成長できる環境を提供しています。定期的な研修やワークショップを通じて、スキルや知識の向上に努めています。
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="accordion-area__item">
+                                    <h3 class="accordion-area__item--ttl fadeUpTarget">
+                                        <span class="accordion-area__item--Q">Q</span>
+                                        子どもたちに提供される食事や健康管理について教えてください。
+                                        <i class="fa fa-play"></i>
+                                    </h3>
+                                    <div class="accordion-area__item--box">
+                                        <p class="accordion-area__txt fadeUpTarget">
+                                            <span>A</span>
+                                            当園では、バランスの取れた食事や健康管理に特に配慮しています。栄養士の監修のもと、子どもたちの成長に必要な栄養を考慮した食事を提供しています。また、日々の健康管理や安全管理にも十分な配慮をし、保護者の皆様に安心してお子さまをお預けいただける環境を整えています。
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="accordion-area__item">
+                                    <h3 class="accordion-area__item--ttl fadeUpTarget">
+                                        <span class="accordion-area__item--Q">Q</span>
+                                        保護者とのコミュニケーションはどのように行われていますか？
+                                        <i class="fa fa-play"></i>
+                                    </h3>
+                                    <div class="accordion-area__item--box">
+                                        <p class="accordion-area__txt fadeUpTarget">
+                                            <span>A</span>
+                                            当園では、保護者との密なコミュニケーションを大切にしています。定期的な面談や保護者会、またはLINEやメールなどのSNSを通じて、子どもたちの様子や日々の過ごし方についての情報共有を行っています。保護者の皆様との信頼関係を築きながら、お子さまの成長を共にサポートしています。
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <div id="contact" class="contact-form">
+                <?php echo do_shortcode('[contact-form-7 id="9b1b9bd" title="採用ページのお問い合わせ"]'); ?>
+                </div>
+            </div>
+        </div>
+        <div id="page-top">
+            <a href="#"><i class="fa fa-angle-up"></i></a>
+        </div>
+        <?php get_footer(); ?>

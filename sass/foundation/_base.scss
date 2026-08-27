@@ -1,0 +1,79 @@
+@use "../global/" as *;
+html {
+    scroll-behavior: smooth;
+  }
+main{
+  color: $text;
+}
+
+.kosugi-maru-regular {
+  font-family: $kosugi-maru;
+  font-weight: 400;
+  font-style: normal;
+}  
+.yusei-magic-regular {
+  font-family: "Yusei Magic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.jost{
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.marcellus-regular {
+  font-family: $marcellus;
+  font-weight: 400;
+  font-style: normal;
+}
+  
+body{
+  background-image: url(../img/bg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 1px;
+  @include mq(ip){
+    background-image: url(../img/sp-bg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+a{
+  text-decoration: none;
+  transition: opacity 0.3s;
+  opacity: 1;
+}
+a:hover{
+opacity: 0.5;
+transition: opacity 0.3s;
+}
+@media (any-hover: hover) {
+  a:hover {
+    opacity: 0.5;
+  }
+}
+li{
+    list-style: none;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+h2{
+
+}
+address{
+    font-style:normal;
+}
+input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+.inner{
+  max-width: 1440px;
+  margin-inline: auto;
+}

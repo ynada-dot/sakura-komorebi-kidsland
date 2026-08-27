@@ -1,0 +1,96 @@
+@use "../global/" as *;
+.fadeUp{
+  animation-name:fadeUpAnime;
+  animation-duration:1.7s;
+  animation-fill-mode:forwards;
+  opacity:0;
+}
+    
+@keyframes fadeUpAnime{
+  from {
+    opacity: 0;
+    transform: translateY(130px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+a.fadeUp:hover{
+  opacity: 0.5 !important;
+  transition: opacity 0.3s;
+}
+
+.fadeOutTarget {
+  opacity: 1;
+  transition: opacity 2s; 
+}
+  
+.fadeOutTarget.hidden {
+ opacity: 0;
+ transition: opacity 2s; 
+}
+#page-top a{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	background:#fff;
+	border-radius: 50%;
+	width: 72px;
+	height: 72px;
+	color: $text;
+	text-align: center;
+	text-transform: uppercase; 
+	text-decoration: none;
+	font-size:0.6rem;
+	transition:all 0.3s;
+  position: relative;
+  @include mq(ip){
+    width: 48px;
+    height: 48px;
+    font-size: 0.3rem;
+  }
+}
+.fa-angle-up{
+  font-size: 30px;
+}
+#page-top {
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(0);
+}
+#page-top.InMove {
+  animation: FadeInAnime 1.2s forwards;
+}
+
+@keyframes FadeInAnime {
+  from {
+      opacity: 0;
+      transform: translateY(0);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+#page-top.OutMove {
+  animation: FadeOutAnime 1.2s forwards;
+}
+
+@keyframes FadeOutAnime {
+  from {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  to {
+      opacity: 0;
+      transform: translateY(0);
+  }
+}
+
+

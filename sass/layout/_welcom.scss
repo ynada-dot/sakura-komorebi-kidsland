@@ -1,0 +1,97 @@
+@use "../global/" as *;
+.welcom__inner{
+    width: calc((753/1440)*100%);
+    margin-top: 120px;
+    margin-inline: auto;
+    @include mq(sp){
+        width: 80%;
+        margin-top: 80px;
+    }
+    @include mq(ip){
+        width: calc((310/375)*100%);
+        margin-top: 80px;
+    }
+}
+.welcom__logo {
+    width: 108px;
+    height: 108px;
+    margin-inline: auto;
+    @include mq(ip){
+        width: 80px;
+        height: 80px;
+    }
+}
+.welcom__logo--img {
+    @include mq(ip){
+        width: 100%;
+        height: auto;
+    }
+}
+.welcom__body {
+    text-align: center;
+}
+.welcom__ttl {
+    margin-top: 8px;
+    font-size: 24px;
+    font-family: $kosugi-maru;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    @include mq(ip){
+        margin-top: 8px;
+        font-size: 20px;
+    }
+}
+.welcom__ttl-en {
+    margin-top: 8px;
+    font-family: $jost;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 0.2em;
+    font-size: 10px;
+    text-transform: capitalize;
+    @include mq(ip){
+        font-size: 10px;
+        margin-top: 10px;
+    }
+}
+.welcom__txt-area {
+    margin-top: 64px;
+    @include mq(ip){
+        margin-top: 32px;
+    }
+}
+.about .welcom__txt-area--txt {
+    @include mq(ip){
+        font-size: 16px;
+        text-align: left;
+    }
+}
+.welcom__txt-area--br {
+    display: none;
+    @include mq(ip){
+        display: block;
+    }
+}
+.welcom__txt-area--txt {
+    font-size: 18px;
+    font-family: $kosugi-maru;
+    line-height: 2;
+    letter-spacing: 0.1em;
+    @include mq(ip){
+        font-size: 13px;
+        font-weight: lighter;
+    }
+}
+.hiring__txt-area--br {
+    display: none;
+    @include mq(ip){
+        display: block;
+    }
+}
+.welcom__txt-area--txt:nth-child(2){
+    margin-top: 12px;
+    @include mq(ip){
+        margin-top: 31px;
+    }
+}

@@ -1,0 +1,127 @@
+@use "../global/" as *;
+.about .hiring{
+    @include mq(ip){
+        margin-top: 80px;
+    }
+}
+.hiring {
+    position: relative;
+}
+.hiring__back-image {
+    min-height: 500px;
+    object-fit: cover;
+    @include mq(sp){
+        display: none;
+    }
+}
+.hiring__sp-back-image{
+    display: none;
+    @include mq(sp){
+        display: block;
+        height: 550px;
+        object-fit: cover;
+    }
+    @include mq(ip){
+        height: auto;
+    }
+}
+.hiring__body {
+    background-color: rgba(255, 255, 255, 0.9); /* 半透明の白 */
+    padding-top: 64px;
+    padding-bottom: 64px;
+    width: calc((1080/1440)*100%);
+    margin-inline: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border-radius: 40px;
+    @media (max-width: 1150px){
+        height: 85%;
+    }
+    @include mq(sp){
+        padding-top: 64px;
+        height: auto;
+    }
+    @include mq(ip){
+        width: calc((345/375)*100%);
+    }
+}
+.hiring__txt-area {
+    margin-top: 48px;
+    @media (max-width: 1150px){
+        margin-top: 24px;
+    }
+    @include mq(tab){
+        margin-top: 15px;
+    }
+    @include mq(ip){
+        margin-top: 48px;
+    }
+}
+.hiring__txt-area--txt {
+    font-family: $kosugi-maru;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+}
+.hiring__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: calc(36/1440)*100%;
+    margin-top: 39px;
+    flex-wrap: wrap;
+    @media (max-width: 1150px){
+        margin-top: 20px;
+    }
+    @include mq(sp){
+        display: block;
+    }
+    @include mq(ip){
+        display: block;
+        margin-top: 32px;
+    }
+}
+.hiring__archive-link {
+    width: 240px;
+    height: 60px;
+    border: 2px solid $text;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $background;
+    color: $text;
+    @include mq(sp){
+        margin-inline: auto;
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        top: 43%;
+        right: 24px;
+        transform: rotate(45deg);
+        background-color: $text;
+        width: 12px;
+        height: 2px;
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        top: 56%;
+        transform: rotate(-45deg);
+        right: 24px;
+        background-color: $text;
+        width: 12px;
+        height: 2px;
+    }
+}
+.hiring__archive-link:nth-child(2){
+    background-color: $second-back;
+    @include mq(sp){
+        margin-top: 24px;
+    }
+}

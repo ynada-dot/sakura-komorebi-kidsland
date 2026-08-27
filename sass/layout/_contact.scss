@@ -1,0 +1,28 @@
+@use "../global/" as *;
+.contact .contact-form{
+    margin-top: 48px;
+}
+.contact__txt {
+    margin-top: 120px;
+    font-size: 16px;
+    font-family: $kosugi-maru;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+    color: $second-text;
+    margin-inline: calc((180/1440)*100%);
+    @include mq(sp){
+        margin-inline: auto;
+        margin-top: 80px;
+        max-width: 500px;
+        width: calc((345/375)*100%);
+        font-size: 14px;
+    }
+}
+.contact__txt:nth-child(2){
+    margin-top: 12px;
+    text-decoration: 1px underline;
+    @include mq(sp){
+        padding-right: 7px;
+    }
+}

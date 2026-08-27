@@ -1,0 +1,93 @@
+@use "../global/" as *;
+.introduction__inner {
+    width: calc((1080/1440)*100%);
+    margin-inline: calc((180/1440)*100%);
+    margin-top: 120px;
+    @include mq(ip){
+        width: 100%;
+        max-width: 375px;
+        margin-inline: auto;
+        margin-top: 88px;
+    }
+}
+.introduction__body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-inline: calc((36/1440)*100%);
+    gap: 24px;
+    margin-top: 72px;
+    @include mq(ip){
+        margin-top: 48px;
+        margin-inline: calc((67.5/375)*100%);
+    }
+}
+.introduction__place {
+    width: 100%;
+    max-width: 320px;
+    height: 60px;
+    color: $second-text;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    font-size: 24px;
+    font-family: $kosugi-maru;
+    font-weight: 400;
+    @include mq(ip){
+        height: 40px;
+        border-radius: 12px;
+        font-size: 18px;
+    }
+}
+.introduction__archive-link {
+    width: 240px;
+    height: 60px;
+    border: 2px solid $text;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin-top: 54px;
+    margin-inline: auto;
+    color: $text;position: relative;
+    @include mq(ip){
+        width: 200px;
+        height: 50px;
+        border-radius: 30px;
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        top: 43%;
+        right: 24px;
+        transform: rotate(45deg);
+        background-color: $text;
+        width: 12px;
+        height: 2px;
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        top: 56%;
+        transform: rotate(-45deg);
+        right: 24px;
+        background-color: $text;
+        width: 12px;
+        height: 2px;
+    }
+}
+.introduction__archive-link--txt {
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    font-weight: lighter;
+    @include mq(ip){
+        font-size: 16px;
+    }
+}

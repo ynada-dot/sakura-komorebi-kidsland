@@ -1,0 +1,45 @@
+@use "../global/" as *;
+.recruit-thanks .page__ttl-are--ttl{
+    @include mq(tab){
+        font-size: 25px;
+    }
+    @include mq(sp){
+        font-size: 20px;
+        line-height: 1.5;
+    }
+}
+.recruit-thanks .page__ttl-are--ttl br{
+    display: none;
+    @include mq(sp){
+        display: block;
+    }
+}
+
+.recruit-thanks__txt {
+    font-size: 20px;
+    font-family: $kosugi-maru;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    color: $second-text;
+    text-align: center;
+    margin-top: 80px;
+    @include mq(sp){
+        font-size: 16px;
+        line-height: 1.5;
+        margin-top: 60px;
+        margin-inline: calc((15/375)*100%);
+    }
+    @include mq(ip){
+        text-align: left;
+    }
+
+}
+.recruit-thanks .button-link {
+    margin-top: 120px;
+    background-color: #fff;
+    margin-bottom: 80px;
+    @include mq(sp){
+        margin-top: 80px;
+    }
+}

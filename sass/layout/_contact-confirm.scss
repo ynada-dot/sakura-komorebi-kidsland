@@ -1,0 +1,19 @@
+@use "../global/" as *;
+.contact-confirm .contact-form__place {
+    justify-content: left;
+    gap: 10px;
+    @include mq(sp){
+        display: block;
+    }
+}
+.contact-confirm .contact-form__place--txt {
+    width: 150px;
+    @include mq(sp){
+        margin-top: 4px;
+    }
+}
+.contact-confirm .contact-form__right{
+    @include mq(sp){
+        margin-top: 8px;
+    }
+}

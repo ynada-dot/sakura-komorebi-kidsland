@@ -1,0 +1,188 @@
+@use "../global/" as *;
+.fv__inner{
+    margin-top: 200px;
+    width: calc((1280/1440)*100%);
+    max-width: 1280px;
+    margin-inline: calc((80/1440)*100%);
+    @include mq(tab){
+        margin-top: 180px;
+    }
+    @include mq(sp){
+        margin-top: 170px;
+        width: calc((300/375)*100%);
+        max-width: 400px;
+        margin-inline: auto;
+    }
+    @include mq(ip){
+        margin-top: 122px;
+        width: calc((300/375)*100%);
+        max-width: 400px;
+        margin-inline: auto;
+    }
+}
+.fv__img-area {
+    position: relative;
+}
+.fv__img-area--img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 120px;
+    @include mq(tab){
+        border-radius: 80px;
+    }
+    @include mq(sp){
+        display: none;
+    }
+}
+.fv__img-area--sp-img {
+    display: none;
+    @include mq(sp){
+        display: block;
+        height: auto;
+        width: 100%;
+        border-radius: 45px;
+    }
+    @include mq(sp){
+        display: block;
+        height: auto;
+        width: 100%;
+        border-radius: 60px;
+    }
+}
+.fv__ttl {
+    position: absolute;
+    top: calc((110/540)*100%);
+    left: calc((37/1280)*100%);
+    z-index: 98;
+    width: calc((516/1280)*100%);
+    @include mq(sp){
+        top: calc((28/580)*100%);
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+    }
+    @include mq(ip){
+        top: 28px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc((272/300)*100%);
+    }
+}
+.fv__ttl--area {
+    position: relative;
+    max-width: 516px;
+    @include mq(sp){
+        width: 100%;
+    }
+}
+.fv__ttl--img {
+    height: auto;
+    width: 100%;
+    max-width: 517px;
+    filter: drop-shadow(0 0 50px 0 #fff);
+    @include mq(sp){
+        width: 100%;
+        
+    }
+}
+.fv__ttl--text {
+    position: absolute;
+    top: 50%;
+    left: calc((62/516)*100%);
+    font-family: $yusei;
+    font-size: 40px;
+    line-height: 2;
+    letter-spacing: 0.1em;
+    font-weight: lighter;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    @media (max-width: 1250px){
+        font-size: 36px;
+    }
+    @media (max-width: 1100px){
+        font-size: 32px;
+    }
+    @media (max-width: 1000px){
+        font-size: 28px;
+    }
+    @media (max-width: 800px){
+        font-size: 24px;
+
+    }
+    @media (max-width: 360px){
+        font-size: 22px;
+    }
+    @media (max-width: 340px){
+        font-size: 20px;
+    }
+}
+.fv__ttl--text-under {
+    font-size: 36px;
+    @include mq(sp){
+        font-size: 20px;
+    }
+    @media (max-width: 360px){
+        font-size: 18px;
+    }
+    @media (max-width: 340px){
+        font-size: 16px;
+    }
+}
+.fv__news {
+    position: absolute;
+    bottom: 32px;
+    right: calc((-40/1280)*100%);
+    @include mq(sp){
+        right: 0;
+        left: calc((-13/375)*100%);
+    }
+}
+.fv__news-area {
+    display: block;
+    width: 240px;
+    height: 120px;
+    background-color: $second-back;
+    border-radius: 20px;
+    padding: 16px 16px 18px;
+    box-shadow: 4px 4px 20px 0 #0000001A;
+    color: $text;
+    @include mq(sp){
+        height: 110px;
+    }
+    
+}
+.fv__news--ttl {
+    font-family: $kosugi-maru;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    @include mq(sp){
+        font-size: 16px;
+    }
+}
+.fv__news--txt {
+    font-family: $kosugi-maru;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    font-weight: lighter;
+    margin-top: 8px;
+    @include mq(sp){
+        font-size: 12px;
+    }
+}
+.fv__news--time {
+    display: flex;
+    justify-content: end;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    font-family: $kosugi-maru;
+    margin-top: 4px;
+    @include mq(sp){
+        font-size: 10px;
+        margin-top: 6px;
+    }
+}

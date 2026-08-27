@@ -1,0 +1,132 @@
+@use "../global/" as *;
+.program__inner {
+    width: calc((1080/1440)*100%);
+    max-width: 1080px;
+    margin-top: 120px;
+    margin-bottom: 118px;
+    margin-inline: auto;
+    @include mq(sp){
+        width: 90%;
+    }
+    @include mq(ip){
+        width: 100%;
+    }
+}
+.program__body {
+    background-color: #fff;
+    width: 100%;
+    margin-top: 32px;
+    border-radius: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-inline: calc((40/1440)*100%);
+    @include mq(ip){
+        width: calc(345/375)*100%;
+        margin-inline: auto;
+        padding: 60px calc((12.5/375)*100%);
+        border-radius: 30px;
+    }
+}
+.program__body--list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.program__box {
+    width: 320px;
+    background-color: $background;
+    border-radius: 20px;
+    padding: 12px;
+    @include mq(ip){
+        width: 100%;
+    }
+}
+.program__box--img {
+    width: 296px;
+    height: 180px;
+    border-radius: 20px;
+    @include mq(ip){
+        width: 100%;
+        height: auto;
+        margin-top: 12px;
+    }
+}
+.program__box--ttl {
+    font-size: 20px;
+    font-family: $kosugi-maru;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+    margin-top: 8px;
+}
+.program__box--txt {
+    font-size: 14px;
+    font-family: $kosugi-maru;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    margin-top: 8;
+}
+.caution {
+    margin-top: 32px;
+    font-size: 16px;
+    font-family: $kosugi-maru;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $second-text;
+}
+.contact__archive-link {
+    width: 240px;
+    height: 60px;
+    border: 2px solid $text;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: $text;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        top: 43%;
+        right: 24px;
+        transform: rotate(45deg);
+        background-color: $text;
+        width: 12px;
+        height: 2px;
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        top: 56%;
+        transform: rotate(-45deg);
+        right: 24px;
+        background-color: $text;
+        width: 12px;
+        height: 2px;
+    }
+    @include mq(tab){
+        width: 220px;
+        height: 45px;
+        margin-inline: auto;
+    }
+    @include mq(ip){
+        margin-inline: auto;
+    }
+}
+.contact__archive-link--txt{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    font-family: $kosugi-maru;
+    letter-spacing: 0.1em;
+}
+.contact__txt-area--br {
+    display: none;
+    @media (max-width: 620px){
+        display: block;
+    }
+}

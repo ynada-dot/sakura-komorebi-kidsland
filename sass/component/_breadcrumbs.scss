@@ -1,0 +1,59 @@
+@use "../global/" as *;
+.breadcrumbs {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+    color: $text;
+    @include mq(sp){
+        gap: 5px;
+    }
+    a{
+        color: $text;
+        font-size: 16px;
+        font-family: $kosugi-maru;
+        line-height: 1.5;
+        @include mq(ip){
+            font-size: 14px;
+        }
+    }
+    .archive{
+        color: $text;
+        font-size: 16px;
+        font-family: $kosugi-maru;
+        line-height: 1.5;
+        @include mq(ip){
+            font-size: 14px;
+        }
+    }
+    .post{
+        color: $text;
+        font-size: 16px;
+        font-family: $kosugi-maru;
+        line-height: 1.5;
+        @include mq(ip){
+            font-size: 14px;
+        }
+    }
+}
+.breadcrumbs__top {
+    color: $text;
+    font-size: 16px;
+    font-family: $kosugi-maru;
+    line-height: 1.5;
+    @include mq(ip){
+        font-size: 14px;
+    }
+}
+.mark {
+}
+.breadcrumbs__second {
+    color: $text;
+    font-size: 16px;
+    font-family: $kosugi-maru;
+    line-height: 1.5;
+    @include mq(ip){
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,151 @@
+@use "../global/" as *;
+.header {
+    background-image: url(../img/header.webp);
+    width: 100%;
+    height: 251px;
+    padding-top: 92px;
+    position: absolute;
+    z-index: 99;
+    background-size: 100% 251px;
+    @include mq(tab){
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    @include mq(sp){
+        background-size: cover;
+    }
+    @include mq(ip){
+        display: none;
+    }
+}
+.header__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__list {
+    color: $text;
+    border-left: 1px dotted;
+    position: relative;
+    @include mq(tab){
+        display: none;
+    }
+}
+.header__list:nth-child(4){
+    @include mq(tab){
+        display: block;
+        border-left: none;
+    }
+}
+.header__list:nth-child(4)::before{
+    @include mq(tab){
+        display: none;
+    }
+}
+.header__list:nth-child(4)::after{
+    @include mq(tab){
+        display: none;
+    }
+}
+.header__list::before{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: -4.5px;
+    left: -4.5px;
+    background-color: $text;
+    border-radius: 50%;
+}
+.header__list::after{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    bottom: -4.5px;
+    left: -4.5px;
+    background-color: $text;
+    border-radius: 50%;
+}
+.header__list:last-child{
+    color: $text;
+    border-right: 1px dotted;
+}
+.header__list--link {
+    display: block;
+    width: 150px;
+    max-width: 150px;
+    padding: 4.5px 6.5px 5.5px;
+    text-align: center;
+    position: relative;
+    @media (max-width: 1230px) {
+        width: 130px;
+        height: 95px;
+    }
+    @media (max-width: 1100px){
+        width: 110px;
+    }
+}
+.header__list-center--link{
+    display: block;
+    width: 289px;
+    padding: 7.6px 6.5px;
+    text-align: center;
+    @include mq(tab){
+        padding: 0 6.5px;
+    }
+}
+.header__list-curcle::before{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: -4.5px;
+    right: -4.5px;
+    background-color: $text;
+    border-radius: 50%;
+}
+.header__list-curcle::after{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    bottom: -4.5px;
+    right: -4.5px;
+    background-color: $text;
+    border-radius: 50%;
+}
+.header__list--img {
+    width: 40px;
+    height: 40px;
+}
+.header__list--logo {
+    width: 280px;
+    height: 88px;
+}
+.header__list--jp {
+    font-family: $kosugi-maru;
+    line-height: 1.2;
+    font-weight: 400;
+    margin-top: 12px;
+    color: $text;
+    @media (max-width: 1200px){
+        font-size: 13px;
+    }
+    @media (max-width: 1100px){
+        font-size: 11px;
+    }
+}
+.header__list--en {
+    font-family: $jost;
+    line-height: 1;
+    font-weight: 900;
+    margin-top: 4px;
+    font-size: 10px;
+    color: $text;
+    text-transform: capitalize;
+    @include mq(tab){
+        font-size: 8px;
+    }
+}

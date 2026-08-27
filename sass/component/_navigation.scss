@@ -1,0 +1,83 @@
+@use "../global/" as *;
+.wp-pagenavi{
+    text-align: center;
+    width: 100%;
+    margin-top: 32px;
+}
+.wp-pagenavi{
+    .pages{
+        display: none;
+    }
+    .nextpostslink{
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+        background-color: #fff;
+        color: $hover-color;
+        border: 1px solid $hover-color;
+        font-size: 16px;
+        font-family: $kosugi-maru;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        line-height: 1.2;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .previouspostslink{
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+        background-color: #fff;
+        color: $hover-color;
+        border: 1px solid $hover-color;
+        font-size: 16px;
+        font-family: $kosugi-maru;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        line-height: 1.2;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .page{
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+        background-color: #fff;
+        color: $hover-color;
+        border: 1px solid $hover-color;
+        font-size: 16px;
+        font-family: $kosugi-maru;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        line-height: 1.2;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .current{
+        background-color: $hover-color;
+        color: #fff;
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+        font-size: 16px;
+        font-family: $kosugi-maru;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        line-height: 1.2;
+        border: 0;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.wp-pagenavi a:hover{
+    border: $hover-color;
+}
+.archive-post__list-area{
+    .wp-pagenavi{
+        margin-top: 32px;
+    }
+}

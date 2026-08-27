@@ -1,0 +1,4623 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Marcellus&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  color: #55000C;
+}
+
+.kosugi-maru-regular {
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.yusei-magic-regular {
+  font-family: "Yusei Magic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.jost {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.marcellus-regular {
+  font-family: "Marcellus", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-image: url(../img/bg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 1px;
+}
+@media screen and (max-width: 375px) {
+  body {
+    background-image: url(../img/sp-bg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+a {
+  text-decoration: none;
+  transition: opacity 0.3s;
+  opacity: 1;
+}
+
+a:hover {
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+@media (any-hover: hover) {
+  a:hover {
+    opacity: 0.5;
+  }
+}
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+input[type=checkbox]:hover {
+  cursor: pointer;
+}
+
+.inner {
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+.fv__inner {
+  margin-top: 200px;
+  width: 88.8888888889%;
+  max-width: 1280px;
+  margin-inline: 5.5555555556%;
+}
+@media screen and (max-width: 1024px) {
+  .fv__inner {
+    margin-top: 180px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .fv__inner {
+    margin-top: 170px;
+    width: 80%;
+    max-width: 400px;
+    margin-inline: auto;
+  }
+}
+@media screen and (max-width: 375px) {
+  .fv__inner {
+    margin-top: 122px;
+    width: 80%;
+    max-width: 400px;
+    margin-inline: auto;
+  }
+}
+
+.fv__img-area {
+  position: relative;
+}
+
+.fv__img-area--img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 120px;
+}
+@media screen and (max-width: 1024px) {
+  .fv__img-area--img {
+    border-radius: 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .fv__img-area--img {
+    display: none;
+  }
+}
+
+.fv__img-area--sp-img {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .fv__img-area--sp-img {
+    display: block;
+    height: auto;
+    width: 100%;
+    border-radius: 45px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .fv__img-area--sp-img {
+    display: block;
+    height: auto;
+    width: 100%;
+    border-radius: 60px;
+  }
+}
+
+.fv__ttl {
+  position: absolute;
+  top: 20.3703703704%;
+  left: 2.890625%;
+  z-index: 98;
+  width: 40.3125%;
+}
+@media screen and (max-width: 768px) {
+  .fv__ttl {
+    top: 4.8275862069%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .fv__ttl {
+    top: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90.6666666667%;
+  }
+}
+
+.fv__ttl--area {
+  position: relative;
+  max-width: 516px;
+}
+@media screen and (max-width: 768px) {
+  .fv__ttl--area {
+    width: 100%;
+  }
+}
+
+.fv__ttl--img {
+  height: auto;
+  width: 100%;
+  max-width: 517px;
+  filter: drop-shadow(0 0 50px 0 #fff);
+}
+@media screen and (max-width: 768px) {
+  .fv__ttl--img {
+    width: 100%;
+  }
+}
+
+.fv__ttl--text {
+  position: absolute;
+  top: 50%;
+  left: 12.015503876%;
+  font-family: "Yusei Magic", sans-serif;
+  font-size: 40px;
+  line-height: 2;
+  letter-spacing: 0.1em;
+  font-weight: lighter;
+  transform: translateY(-50%);
+  white-space: nowrap;
+}
+@media (max-width: 1250px) {
+  .fv__ttl--text {
+    font-size: 36px;
+  }
+}
+@media (max-width: 1100px) {
+  .fv__ttl--text {
+    font-size: 32px;
+  }
+}
+@media (max-width: 1000px) {
+  .fv__ttl--text {
+    font-size: 28px;
+  }
+}
+@media (max-width: 800px) {
+  .fv__ttl--text {
+    font-size: 24px;
+  }
+}
+@media (max-width: 360px) {
+  .fv__ttl--text {
+    font-size: 22px;
+  }
+}
+@media (max-width: 340px) {
+  .fv__ttl--text {
+    font-size: 20px;
+  }
+}
+
+.fv__ttl--text-under {
+  font-size: 36px;
+}
+@media screen and (max-width: 768px) {
+  .fv__ttl--text-under {
+    font-size: 20px;
+  }
+}
+@media (max-width: 360px) {
+  .fv__ttl--text-under {
+    font-size: 18px;
+  }
+}
+@media (max-width: 340px) {
+  .fv__ttl--text-under {
+    font-size: 16px;
+  }
+}
+
+.fv__news {
+  position: absolute;
+  bottom: 32px;
+  right: -3.125%;
+}
+@media screen and (max-width: 768px) {
+  .fv__news {
+    right: 0;
+    left: -3.4666666667%;
+  }
+}
+
+.fv__news-area {
+  display: block;
+  width: 240px;
+  height: 120px;
+  background-color: #FFF7B8;
+  border-radius: 20px;
+  padding: 16px 16px 18px;
+  box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, 0.1019607843);
+  color: #55000C;
+}
+@media screen and (max-width: 768px) {
+  .fv__news-area {
+    height: 110px;
+  }
+}
+
+.fv__news--ttl {
+  font-family: "Kosugi Maru", sans-serif;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  .fv__news--ttl {
+    font-size: 16px;
+  }
+}
+
+.fv__news--txt {
+  font-family: "Kosugi Maru", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  font-weight: lighter;
+  margin-top: 8px;
+}
+@media screen and (max-width: 768px) {
+  .fv__news--txt {
+    font-size: 12px;
+  }
+}
+
+.fv__news--time {
+  display: flex;
+  justify-content: end;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  font-family: "Kosugi Maru", sans-serif;
+  margin-top: 4px;
+}
+@media screen and (max-width: 768px) {
+  .fv__news--time {
+    font-size: 10px;
+    margin-top: 6px;
+  }
+}
+
+.welcom__inner {
+  width: 52.2916666667%;
+  margin-top: 120px;
+  margin-inline: auto;
+}
+@media screen and (max-width: 768px) {
+  .welcom__inner {
+    width: 80%;
+    margin-top: 80px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .welcom__inner {
+    width: 82.6666666667%;
+    margin-top: 80px;
+  }
+}
+
+.welcom__logo {
+  width: 108px;
+  height: 108px;
+  margin-inline: auto;
+}
+@media screen and (max-width: 375px) {
+  .welcom__logo {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .welcom__logo--img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.welcom__body {
+  text-align: center;
+}
+
+.welcom__ttl {
+  margin-top: 8px;
+  font-size: 24px;
+  font-family: "Kosugi Maru", sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+}
+@media screen and (max-width: 375px) {
+  .welcom__ttl {
+    margin-top: 8px;
+    font-size: 20px;
+  }
+}
+
+.welcom__ttl-en {
+  margin-top: 8px;
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0.2em;
+  font-size: 10px;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 375px) {
+  .welcom__ttl-en {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+}
+
+.welcom__txt-area {
+  margin-top: 64px;
+}
+@media screen and (max-width: 375px) {
+  .welcom__txt-area {
+    margin-top: 32px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .about .welcom__txt-area--txt {
+    font-size: 16px;
+    text-align: left;
+  }
+}
+
+.welcom__txt-area--br {
+  display: none;
+}
+@media screen and (max-width: 375px) {
+  .welcom__txt-area--br {
+    display: block;
+  }
+}
+
+.welcom__txt-area--txt {
+  font-size: 18px;
+  font-family: "Kosugi Maru", sans-serif;
+  line-height: 2;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 375px) {
+  .welcom__txt-area--txt {
+    font-size: 13px;
+    font-weight: lighter;
+  }
+}
+
+.hiring__txt-area--br {
+  display: none;
+}
+@media screen and (max-width: 375px) {
+  .hiring__txt-area--br {
+    display: block;
+  }
+}
+
+.welcom__txt-area--txt:nth-child(2) {
+  margin-top: 12px;
+}
+@media screen and (max-width: 375px) {
+  .welcom__txt-area--txt:nth-child(2) {
+    margin-top: 31px;
+  }
+}
+
+.introduction__inner {
+  width: 75%;
+  margin-inline: 12.5%;
+  margin-top: 120px;
+}
+@media screen and (max-width: 375px) {
+  .introduction__inner {
+    width: 100%;
+    max-width: 375px;
+    margin-inline: auto;
+    margin-top: 88px;
+  }
+}
+
+.introduction__body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 2.5%;
+  gap: 24px;
+  margin-top: 72px;
+}
+@media screen and (max-width: 375px) {
+  .introduction__body {
+    margin-top: 48px;
+    margin-inline: 18%;
+  }
+}
+
+.introduction__place {
+  width: 100%;
+  max-width: 320px;
+  height: 60px;
+  color: #333333;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  font-size: 24px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+}
+@media screen and (max-width: 375px) {
+  .introduction__place {
+    height: 40px;
+    border-radius: 12px;
+    font-size: 18px;
+  }
+}
+
+.introduction__archive-link {
+  width: 240px;
+  height: 60px;
+  border: 2px solid #55000C;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin-top: 54px;
+  margin-inline: auto;
+  color: #55000C;
+  position: relative;
+}
+@media screen and (max-width: 375px) {
+  .introduction__archive-link {
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+  }
+}
+.introduction__archive-link::before {
+  position: absolute;
+  content: "";
+  top: 43%;
+  right: 24px;
+  transform: rotate(45deg);
+  background-color: #55000C;
+  width: 12px;
+  height: 2px;
+}
+.introduction__archive-link::after {
+  position: absolute;
+  content: "";
+  top: 56%;
+  transform: rotate(-45deg);
+  right: 24px;
+  background-color: #55000C;
+  width: 12px;
+  height: 2px;
+}
+
+.introduction__archive-link--txt {
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  font-weight: lighter;
+}
+@media screen and (max-width: 375px) {
+  .introduction__archive-link--txt {
+    font-size: 16px;
+  }
+}
+
+.letter {
+  position: relative;
+}
+
+.letter__inner {
+  background-image: url(../img/top-letters__bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: 162px;
+  padding-bottom: 120px;
+  width: 100%;
+  border-top: 3px dotted #ef8f9c;
+  border-bottom: 3px dotted #ef8f9c;
+}
+@media screen and (max-width: 375px) {
+  .letter__inner {
+    background-image: url(../img/top-letters__sp-bg.jpeg);
+    margin-top: 120px;
+    background-size: cover;
+    padding-bottom: 80px;
+  }
+}
+
+.letter__tti-area {
+  text-align: center;
+  position: absolute;
+  top: -54px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.welcom__site--img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 64px;
+  height: 64px;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 375px) {
+  .welcom__site--img {
+    width: 47.4px;
+    height: 47.4px;
+  }
+}
+
+.letter__body {
+  padding-top: 160px;
+  margin-inline: 13.125%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 48px 51px;
+}
+@media screen and (max-width: 1024px) {
+  .letter__body {
+    padding-inline: 30px;
+    margin-inline: auto;
+  }
+}
+@media screen and (max-width: 375px) {
+  .letter__body {
+    gap: 24px;
+    padding-inline: 0;
+  }
+}
+
+.letter__item {
+  display: block;
+  width: 320px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding-bottom: 12px;
+}
+@media screen and (max-width: 375px) {
+  .letter__item {
+    width: 300px;
+    padding-bottom: 13px;
+  }
+}
+
+.letter__item-area {
+  margin: 12px 12px 0;
+  color: #333333;
+}
+
+.letter__item-area--ttl {
+  font-family: "Kosugi Maru", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  font-weight: 400;
+}
+
+.letter__item-area--txt {
+  font-family: "Kosugi Maru", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  margin-top: 12px;
+  font-weight: 400;
+}
+
+.letter__item-area--time {
+  font-family: "Kosugi Maru", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  margin-top: 12px;
+  font-weight: 400;
+  margin-top: 13px;
+  display: flex;
+  justify-content: end;
+}
+
+@media screen and (max-width: 375px) {
+  .about .hiring {
+    margin-top: 80px;
+  }
+}
+
+.hiring {
+  position: relative;
+}
+
+.hiring__back-image {
+  min-height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .hiring__back-image {
+    display: none;
+  }
+}
+
+.hiring__sp-back-image {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .hiring__sp-back-image {
+    display: block;
+    height: 550px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media screen and (max-width: 375px) {
+  .hiring__sp-back-image {
+    height: auto;
+  }
+}
+
+.hiring__body {
+  background-color: rgba(255, 255, 255, 0.9); /* 半透明の白 */
+  padding-top: 64px;
+  padding-bottom: 64px;
+  width: 75%;
+  margin-inline: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 40px;
+}
+@media (max-width: 1150px) {
+  .hiring__body {
+    height: 85%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hiring__body {
+    padding-top: 64px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 375px) {
+  .hiring__body {
+    width: 92%;
+  }
+}
+
+.hiring__txt-area {
+  margin-top: 48px;
+}
+@media (max-width: 1150px) {
+  .hiring__txt-area {
+    margin-top: 24px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .hiring__txt-area {
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .hiring__txt-area {
+    margin-top: 48px;
+  }
+}
+
+.hiring__txt-area--txt {
+  font-family: "Kosugi Maru", sans-serif;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+}
+
+.hiring__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5%;
+  margin-top: 39px;
+  flex-wrap: wrap;
+}
+@media (max-width: 1150px) {
+  .hiring__button {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hiring__button {
+    display: block;
+  }
+}
+@media screen and (max-width: 375px) {
+  .hiring__button {
+    display: block;
+    margin-top: 32px;
+  }
+}
+
+.hiring__archive-link {
+  width: 240px;
+  height: 60px;
+  border: 2px solid #55000C;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFEDF0;
+  color: #55000C;
+}
+@media screen and (max-width: 768px) {
+  .hiring__archive-link {
+    margin-inline: auto;
+  }
+}
+.hiring__archive-link::before {
+  position: absolute;
+  content: "";
+  top: 43%;
+  right: 24px;
+  transform: rotate(45deg);
+  background-color: #55000C;
+  width: 12px;
+  height: 2px;
+}
+.hiring__archive-link::after {
+  position: absolute;
+  content: "";
+  top: 56%;
+  transform: rotate(-45deg);
+  right: 24px;
+  background-color: #55000C;
+  width: 12px;
+  height: 2px;
+}
+
+.hiring__archive-link:nth-child(2) {
+  background-color: #FFF7B8;
+}
+@media screen and (max-width: 768px) {
+  .hiring__archive-link:nth-child(2) {
+    margin-top: 24px;
+  }
+}
+
+.footer {
+  margin-top: -6px;
+  padding-top: 48px;
+  padding-bottom: 12px;
+  background: linear-gradient(to bottom, #FFFEF3, #FFF7B8);
+}
+
+.footer__logo {
+  width: 240px;
+  height: auto;
+  margin-inline: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.footer__body {
+  margin-top: 48px;
+  margin-inline: 12.5%;
+  padding-inline: 6.7361111111%;
+}
+@media screen and (max-width: 375px) {
+  .footer__body {
+    width: 86.4%;
+    margin-inline: 6.8%;
+    padding-inline: 0;
+  }
+}
+
+.footer__item-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+@media screen and (max-width: 375px) {
+  .footer__item-area {
+    justify-content: left;
+  }
+}
+
+.footer__item-area--item {
+  padding-right: 24px;
+}
+@media screen and (max-width: 375px) {
+  .footer__item-area--item {
+    width: 46.2962962963%;
+    padding-right: 0;
+  }
+}
+
+.footer__item-area--link {
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  font-family: "Kosugi Maru", sans-serif;
+  color: #55000C;
+}
+@media screen and (max-width: 375px) {
+  .footer__item-area--link {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .footer__item-area--item:nth-child(7) .footer__item-area--link {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .footer__item-area--item:nth-child(8) .footer__item-area--link {
+    font-size: 12px;
+  }
+}
+
+.footer__foot {
+  font-family: "Kosugi Maru", sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  color: #333333;
+  margin-inline: auto;
+  text-align: center;
+  margin-top: 48px;
+}
+@media screen and (max-width: 375px) {
+  .footer__foot {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+.about .welcom__txt-area--txt {
+  line-height: 3;
+}
+
+.program__inner {
+  width: 75%;
+  max-width: 1080px;
+  margin-top: 120px;
+  margin-bottom: 118px;
+  margin-inline: auto;
+}
+@media screen and (max-width: 768px) {
+  .program__inner {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .program__inner {
+    width: 100%;
+  }
+}
+
+.program__body {
+  background-color: #fff;
+  width: 100%;
+  margin-top: 32px;
+  border-radius: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-inline: 2.7777777778%;
+}
+@media screen and (max-width: 375px) {
+  .program__body {
+    width: 92%;
+    margin-inline: auto;
+    padding: 60px 3.3333333333%;
+    border-radius: 30px;
+  }
+}
+
+.program__body--list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.program__box {
+  width: 320px;
+  background-color: #FFEDF0;
+  border-radius: 20px;
+  padding: 12px;
+}
+@media screen and (max-width: 375px) {
+  .program__box {
+    width: 100%;
+  }
+}
+
+.program__box--img {
+  width: 296px;
+  height: 180px;
+  border-radius: 20px;
+}
+@media screen and (max-width: 375px) {
+  .program__box--img {
+    width: 100%;
+    height: auto;
+    margin-top: 12px;
+  }
+}
+
+.program__box--ttl {
+  font-size: 20px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  margin-top: 8px;
+}
+
+.program__box--txt {
+  font-size: 14px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  margin-top: 8;
+}
+
+.caution {
+  margin-top: 32px;
+  font-size: 16px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #333333;
+}
+
+.contact__archive-link {
+  width: 240px;
+  height: 60px;
+  border: 2px solid #55000C;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #55000C;
+  position: relative;
+}
+.contact__archive-link::before {
+  position: absolute;
+  content: "";
+  top: 43%;
+  right: 24px;
+  transform: rotate(45deg);
+  background-color: #55000C;
+  width: 12px;
+  height: 2px;
+}
+.contact__archive-link::after {
+  position: absolute;
+  content: "";
+  top: 56%;
+  transform: rotate(-45deg);
+  right: 24px;
+  background-color: #55000C;
+  width: 12px;
+  height: 2px;
+}
+@media screen and (max-width: 1024px) {
+  .contact__archive-link {
+    width: 220px;
+    height: 45px;
+    margin-inline: auto;
+  }
+}
+@media screen and (max-width: 375px) {
+  .contact__archive-link {
+    margin-inline: auto;
+  }
+}
+
+.contact__archive-link--txt {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+  font-family: "Kosugi Maru", sans-serif;
+  letter-spacing: 0.1em;
+}
+
+.contact__txt-area--br {
+  display: none;
+}
+@media (max-width: 620px) {
+  .contact__txt-area--br {
+    display: block;
+  }
+}
+
+.page-introduction {
+  position: relative;
+  background-image: url(../img/top-letters__bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: auto;
+  margin-top: 134px;
+  padding-top: 114px;
+  padding-bottom: 80px;
+  border-top: 3px dotted #ef8f9c;
+  border-bottom: 3px dotted #ef8f9c;
+}
+@media screen and (max-width: 375px) {
+  .page-introduction {
+    background-image: url(../img/top-letters__sp-bg.jpeg);
+    margin-top: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-bottom: 80px;
+    padding-top: 74px;
+  }
+}
+
+.page-introduction__tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.page-introduction__tab--list {
+  width: 149px;
+  height: 50px;
+  color: #ef8f9c;
+  border: 1px solid #ef8f9c;
+  border-bottom: 0;
+  background-color: #fff;
+  border-radius: 12px 12px 0 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 375px) {
+  .page-introduction__tab--list {
+    width: 120px;
+    height: 40px;
+    border: 1px solid #ef8f9c;
+    border-bottom: 0;
+    background-color: #fff;
+    border-radius: 12px 12px 0 0;
+  }
+}
+
+.page-introduction__tab--small {
+  font-size: 14px;
+  display: block;
+}
+@media screen and (max-width: 375px) {
+  .page-introduction__tab--small {
+    font-size: 12px;
+  }
+}
+
+.page-introduction__tab--list a {
+  color: #ef8f9c;
+  font-size: 16px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  width: 100%;
+  height: 100%;
+  padding-top: 7px;
+}
+@media screen and (max-width: 375px) {
+  .page-introduction__tab--list a {
+    font-size: 14px;
+  }
+}
+
+.page-introduction__tab--list.active {
+  background-color: #ef8f9c;
+}
+
+.page-introduction__tab--list.active a {
+  color: #fff;
+}
+
+.daycare {
+  background-color: #fff;
+  width: 75%;
+  margin-inline: auto;
+  padding: 60px 40px;
+  border-radius: 40px;
+  display: none;
+  opacity: 0;
+}
+@media screen and (max-width: 768px) {
+  .daycare {
+    padding: 24px 12px;
+    border-radius: 30px;
+    width: 92%;
+  }
+}
+
+.daycare.is-active {
+  display: block;
+  animation-name: displayAnime; /*ふわっと表示させるためのアニメーション*/
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes displayAnime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.daycare__cat {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.daycare__cat--item {
+  width: 200px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .daycare__cat--item {
+    width: 150px;
+  }
+}
+
+.daycare__cat--link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #ef8f9c;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 16px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  border-radius: 8px;
+  border: 1px solid #ef8f9c;
+}
+@media screen and (max-width: 768px) {
+  .daycare__cat--link {
+    color: #ef8f9c;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 14px;
+  }
+}
+
+.daycare__body {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.daycare__list {
+  width: 320px;
+  padding: 12px;
+  background-color: #FFEDF0;
+  border-radius: 20px;
+}
+
+.daycare__list a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.daycare__list--img {
+  width: 100%;
+  border-radius: 20px;
+  height: 186px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .daycare__list--img {
+    height: auto;
+    max-height: 186px;
+  }
+}
+
+.daycare__list-cat {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.daycare__list-cat--txt {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 4px 8px;
+  font-size: 14px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: #55000C;
+}
+
+.daycare__list--ttl {
+  font-size: 20px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #55000C;
+  margin-top: 8px;
+}
+
+.place__cat {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.place__cat--item {
+  width: 150px;
+  text-align: center;
+}
+
+.place__cat--link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #ef8f9c;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 16px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  border-radius: 8px;
+  border: 1px solid #ef8f9c;
+}
+
+.introduction__single-link {
+  max-width: 300px;
+  width: 100%;
+  height: 60px;
+  border: 2px solid #55000c;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin-top: 54px;
+  margin-inline: auto;
+  color: #55000c;
+  position: relative;
+}
+.introduction__single-link::before {
+  position: absolute;
+  content: "";
+  top: 43%;
+  right: 24px;
+  transform: rotate(45deg);
+  background-color: #55000C;
+  width: 12px;
+  height: 2px;
+}
+.introduction__single-link::after {
+  position: absolute;
+  content: "";
+  top: 56%;
+  transform: rotate(-45deg);
+  right: 24px;
+  background-color: #55000C;
+  width: 12px;
+  height: 2px;
+}
+
+.introduction__single-link--txt {
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  font-family: "Kosugi Maru", sans-serif;
+}
+
+.single-introduction__main {
+  width: 75%;
+  margin-inline: 12.5%;
+  text-align: center;
+  margin-top: 80px;
+}
+@media screen and (max-width: 768px) {
+  .single-introduction__main {
+    width: 92%;
+    margin-inline: auto;
+    margin-top: 60px;
+  }
+}
+
+.single-introduction__body--img {
+  width: 74.0740740741%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 40px;
+}
+@media screen and (max-width: 768px) {
+  .single-introduction__body--img {
+    width: 80%;
+    border-radius: 20px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .single-introduction__body--img {
+    width: 100%;
+    border-radius: 20px;
+  }
+}
+
+.single-introduction__ttl {
+  margin-top: 32px;
+  font-size: 20px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  line-height: 1;
+}
+@media screen and (max-width: 768px) {
+  .single-introduction__ttl {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 24px;
+  }
+}
+
+.single-introduction__ttl br {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .single-introduction__ttl br {
+    display: block;
+  }
+}
+
+.single-introduction__txt {
+  margin-top: 16px;
+  font-size: 18px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  line-height: 2;
+}
+@media screen and (max-width: 768px) {
+  .single-introduction__txt {
+    font-size: 16px;
+    text-align: left;
+    margin-top: 12px;
+  }
+}
+
+.inside {
+  position: relative;
+}
+
+.inside__body {
+  background-image: url(../img/top-letters__bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: 162px;
+  padding-top: 184px;
+  padding-bottom: 120px;
+  width: 100%;
+  border-top: 3px dotted #ef8f9c;
+  border-bottom: 3px dotted #ef8f9c;
+}
+@media screen and (max-width: 375px) {
+  .inside__body {
+    padding: 120px 0 80px;
+  }
+}
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider img {
+  width: 100%;
+  height: 166px;
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .slider img {
+    border-radius: 16px;
+    height: 162;
+  }
+}
+@media screen and (max-width: 375px) {
+  .slider img {
+    border-radius: 12px;
+    height: 75px;
+  }
+}
+
+.slider .slick-slide {
+  margin: 0 6px; /*スライド左右の余白調整*/
+}
+
+.message {
+  width: 75%;
+  margin-inline: auto;
+  margin-top: 120px;
+}
+@media screen and (max-width: 768px) {
+  .message {
+    width: 92%;
+    margin-top: 80px;
+  }
+}
+
+.massage__body {
+  max-width: 800px;
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  gap: 4%;
+  margin-top: 64px;
+}
+@media screen and (max-width: 768px) {
+  .massage__body {
+    display: block;
+    margin-top: 48px;
+  }
+}
+
+.massage__img-area {
+  width: 37.5%;
+}
+@media screen and (max-width: 768px) {
+  .massage__img-area {
+    width: 200px;
+    margin-inline: auto;
+  }
+}
+
+.massage__img-area--img {
+  height: auto;
+  border-radius: 20px;
+}
+
+.massage__txt-area {
+  width: 58.5%;
+}
+@media screen and (max-width: 768px) {
+  .massage__txt-area {
+    width: 100%;
+  }
+}
+
+.massage__txt-area--txt {
+  font-size: 16px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 2;
+}
+@media screen and (max-width: 768px) {
+  .massage__txt-area--txt {
+    margin-top: 32px;
+    font-size: 14px;
+  }
+}
+
+.about-nursery {
+  width: 75%;
+  margin-inline: auto;
+  margin-top: 120px;
+}
+@media screen and (max-width: 768px) {
+  .about-nursery {
+    width: 92%;
+    margin-top: 80px;
+  }
+}
+
+.about-nursery__body {
+  width: 100%;
+  margin-top: 64px;
+}
+.about-nursery__box {
+  width: 100%;
+}
+
+.about-nursery__line {
+  border-bottom: 1px dotted #55000C;
+  display: flex;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .about-nursery__line {
+    display: block;
+    border-bottom: none;
+  }
+}
+
+.about-nursery__line:nth-child(4) .about-nursery__txt {
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  .about-nursery__line:nth-child(6) .about-nursery__txt {
+    width: 100%;
+    margin-inline: auto;
+    display: block;
+    max-width: 500px;
+  }
+}
+
+.about-nursery__head {
+  background-color: #fff;
+  font-size: 18px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  line-height: 1;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18.5185185185%;
+}
+@media screen and (max-width: 768px) {
+  .about-nursery__head {
+    width: 100%;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    font-size: 16px;
+  }
+}
+
+.about-nursery__txt {
+  font-size: 16px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  line-height: 1;
+  padding-top: 33px;
+  padding-bottom: 33px;
+  padding-left: 25px;
+  width: 81.4814814815%;
+}
+@media screen and (max-width: 768px) {
+  .about-nursery__txt {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 12px;
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+.tel-number {
+  color: #55000C;
+  cursor: pointer;
+}
+
+.about-nursery__txt--br {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .about-nursery__txt--br {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-nursery__line:nth-child(3) .about-nursery__txt {
+    line-height: 1.5;
+  }
+}
+
+.about-nursery__date {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 8px;
+}
+@media screen and (max-width: 768px) {
+  .about-nursery__date {
+    gap: 9.2753623188%;
+  }
+}
+
+.about-nursery__date:nth-child(2) {
+  margin-top: 8px;
+}
+
+.about-nursery__date--txt {
+  margin-top: 8px;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  line-height: 1;
+}
+@media screen and (max-width: 768px) {
+  .about-nursery__date--txt {
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: lighter;
+  }
+}
+
+.about-nursery__line:nth-child(6) div {
+  margin-top: 24px;
+}
+
+.about-nursery__each-area {
+  width: 68.1818181818%;
+}
+@media screen and (max-width: 768px) {
+  .about-nursery__each-area {
+    width: 100%;
+  }
+}
+
+.about-nursery__each-nursery--ttl {
+  font-size: 16px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+}
+
+.about-nursery__each-nursery--line {
+  border: 1px solid #55000C;
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+}
+
+.about-nursery__each-nursery--line:nth-child(2) {
+  border-top: 0px;
+}
+
+.about-nursery__each-nursery--head {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  border-right: 1px solid #55000C;
+  font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  .about-nursery__each-nursery--head {
+    width: 43.6137071651%;
+  }
+}
+
+.about-nursery__each-nursery--txt {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 20px;
+  width: 75%;
+}
+@media screen and (max-width: 768px) {
+  .about-nursery__each-nursery--txt {
+    width: 56.3862928349%;
+  }
+}
+
+.about-nursery__people {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 20px;
+}
+@media screen and (max-width: 768px) {
+  .about-nursery__people {
+    gap: 8px;
+  }
+}
+
+.about-nursery__people--all {
+  background-color: #FFEDF0;
+  color: #55000C;
+  font-size: 16px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  line-height: 1.2;
+  width: 12.0481927711%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .about-nursery__people--all {
+    font-size: 14px;
+    width: 21.7391304348%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-nursery__line:nth-child(7) .about-nursery__txt {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-nursery__line:nth-child(8) .about-nursery__txt {
+    padding-left: 0;
+  }
+}
+
+.about-nursery__people-area--block {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 16px;
+}
+@media screen and (max-width: 768px) {
+  .about-nursery__people-area--block {
+    gap: 8px;
+  }
+}
+
+.about-nursery__people-area--box {
+  text-align: center;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+@media screen and (max-width: 768px) {
+  .about-nursery__people-area--old {
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0;
+  }
+}
+
+.about-nursery__people-area--num {
+  margin-top: 16px;
+}
+@media screen and (max-width: 768px) {
+  .about-nursery__people-area--num {
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0;
+  }
+}
+
+.about-nursery__warning {
+  margin-top: 10px;
+}
+
+.about-nursery__warning--txt {
+  font-size: 16px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  line-height: 1;
+}
+@media screen and (max-width: 768px) {
+  .about-nursery__warning--txt {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+.archive-letter__body {
+  width: 91.6666666667%;
+  max-width: 1320px;
+  margin-top: 120px;
+  margin-inline: auto;
+  margin-bottom: 120px;
+  display: flex;
+  justify-content: center;
+  gap: 2.4242424242%;
+}
+@media screen and (max-width: 768px) {
+  .archive-letter__body {
+    display: block;
+    width: 92%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+
+.archive-letter__body-area {
+  width: 72.7272727273%;
+}
+@media screen and (max-width: 768px) {
+  .archive-letter__body-area {
+    width: 100%;
+  }
+}
+
+.search {
+  height: 85px;
+}
+
+.archive-letter__list {
+  border-top: 2px solid #55000C;
+}
+@media screen and (max-width: 768px) {
+  .archive-letter__list {
+    border-top: 1px solid #55000C;
+  }
+}
+
+.archive-letter__list-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+@media screen and (max-width: 768px) {
+  .archive-letter__list-area {
+    gap: 20px;
+  }
+}
+
+.archive-letter__item {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 20px;
+  height: 280px;
+}
+@media screen and (max-width: 768px) {
+  .archive-letter__item {
+    width: 86.9565217391%;
+    margin-inline: auto;
+    height: auto;
+    max-width: 300px;
+  }
+}
+
+.archive-letter__item--img {
+  width: 100%;
+  height: 135px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.archive-letter__item--txt-area {
+  padding: 12px;
+  height: 144px;
+  position: relative;
+}
+
+.archive-letter__item--ttl {
+  font-size: 18px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  color: #333333;
+}
+@media screen and (max-width: 768px) {
+  .archive-letter__item--ttl {
+    font-size: 16px;
+  }
+}
+
+.archive-letter__item--txt {
+  font-size: 16px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  color: #333333;
+  margin-top: 12px;
+}
+@media screen and (max-width: 768px) {
+  .archive-letter__item--txt {
+    font-size: 14px;
+  }
+}
+
+.archive-letter__item--time {
+  font-size: 14px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  color: #333333;
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+}
+@media screen and (max-width: 768px) {
+  .archive-letter__item--time {
+    margin-bottom: 12px;
+    font-size: 12px;
+  }
+}
+
+.archive-letter__cat {
+  width: 24.8484848485%;
+  border-left: 2px solid #55000C;
+  padding-top: 12px;
+  padding-left: 24px;
+}
+@media screen and (max-width: 768px) {
+  .archive-letter__cat {
+    width: 100%;
+    border-left: 0;
+    border-top: 1px solid #55000C;
+    padding: 12px;
+    margin-top: 32px;
+  }
+}
+
+.archive-letter__cat--ttl {
+  font-size: 24px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  line-height: 1.5;
+}
+@media screen and (max-width: 768px) {
+  .archive-letter__cat--ttl {
+    font-size: 20px;
+  }
+}
+
+.archive-letter__cat--area {
+  margin-top: 10px;
+}
+
+.archive-letter__cat--year {
+  font-size: 16px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 18px;
+}
+@media screen and (max-width: 768px) {
+  .archive-letter__cat--year {
+    font-size: 14px;
+  }
+}
+
+.archive-letter__cat--year::before {
+  content: "";
+  width: 4px;
+  height: 24px;
+  border-radius: 2px;
+  background-color: #ef8f9c;
+  position: absolute;
+  left: 4px;
+}
+@media screen and (max-width: 768px) {
+  .archive-letter__cat--year::before {
+    height: 21px;
+  }
+}
+
+.archive-letter__month-area {
+  margin-top: 10px;
+  padding-left: 8px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 12px 18px;
+  flex-wrap: wrap;
+}
+
+.archive-letter__month--txt {
+  background-color: #fff;
+  color: #55000C;
+  padding: 4px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1;
+}
+@media screen and (max-width: 768px) {
+  .archive-letter__month--txt {
+    font-size: 12px;
+  }
+}
+
+.archive-letter__page-nation {
+  margin-top: 32px;
+  margin-inline: auto;
+}
+
+.archive-post__body {
+  width: 75%;
+  max-width: 1080px;
+  margin: 120px auto 123px;
+}
+@media screen and (max-width: 768px) {
+  .archive-post__body {
+    width: 92%;
+    max-width: 700px;
+    margin: 88px auto;
+  }
+}
+
+.archive-post__cate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  .archive-post__cate {
+    justify-content: left;
+  }
+}
+
+.archive-post__cate--txt {
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8.5px 16px;
+  border-radius: 8px;
+  border: 1px solid #ef8f9c;
+  color: #ef8f9c;
+  background-color: #fff;
+}
+
+.archive-post__list-box {
+  margin-top: 64px;
+}
+@media screen and (max-width: 768px) {
+  .archive-post__list-box {
+    margin-top: 20px;
+  }
+}
+.archive-post__list-box li:first-child .archive-post__item {
+  padding-top: 0;
+}
+
+.archive-post__item {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 27px;
+  border-bottom: 1px solid #333333;
+  width: 100%;
+  gap: 24px;
+}
+@media screen and (max-width: 768px) {
+  .archive-post__item {
+    flex-wrap: wrap;
+    align-items: end;
+    gap: 12px 10px;
+    padding-bottom: 16px;
+  }
+}
+
+.archive-post__item--left {
+  margin-top: 3px;
+  border-radius: 12px;
+  width: 120px;
+  min-width: 120px;
+  height: 120px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .archive-post__item--left {
+    margin-top: 12px;
+    width: 72px;
+    height: 72px;
+    min-width: 72px;
+  }
+}
+
+.archive-post__left--img {
+  width: 48px;
+  height: auto;
+  margin-top: 12px;
+}
+@media screen and (max-width: 768px) {
+  .archive-post__left--img {
+    width: 28.8px;
+    height: 28.8px;
+    margin-top: 11px;
+  }
+}
+
+.archive-post__left--txt {
+  color: #fff;
+  font-size: 18px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.5;
+  margin-top: 8px;
+}
+@media screen and (max-width: 768px) {
+  .archive-post__left--txt {
+    margin-top: 4.8px;
+    font-size: 10.8px;
+  }
+}
+
+.archive-post__img-area {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  margin-top: 3px;
+  min-width: 120px;
+}
+
+.archive-post__sp--date {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .archive-post__sp--date {
+    display: block;
+    font-size: 14px;
+    font-family: "Kosugi Maru", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    line-height: 1.5;
+    color: #333333;
+  }
+}
+
+.archive-post__right {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+@media screen and (max-width: 768px) {
+  .archive-post__right {
+    padding-top: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .archive-post__right time {
+    display: none;
+  }
+}
+
+.archive-post__right--date {
+  font-size: 16px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  color: #333333;
+}
+.archive-post__right--ttl {
+  font-size: 20px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  color: #55000C;
+  margin-top: 12px;
+}
+@media screen and (max-width: 768px) {
+  .archive-post__right--ttl {
+    margin-top: 0;
+    font-size: 18px;
+  }
+}
+
+.archive-post__right--txt {
+  font-size: 16px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  color: #333333;
+  margin-top: 12px;
+}
+@media screen and (max-width: 768px) {
+  .archive-post__right--txt {
+    font-size: 14px;
+  }
+}
+
+.select_back-color {
+  color: #fff;
+  background-color: #ef8f9c;
+}
+
+.motto {
+  margin-top: 120px;
+}
+@media screen and (max-width: 768px) {
+  .motto {
+    margin-top: 80px;
+  }
+}
+
+.motto__body {
+  width: 91.6666666667%;
+  max-width: 1320px;
+  margin-inline: auto;
+  margin-top: 64px;
+}
+@media screen and (max-width: 768px) {
+  .motto__body {
+    width: 84%;
+    margin-inline: auto;
+    max-width: 500px;
+    margin-top: 48px;
+  }
+}
+
+.motto__box {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+}
+@media screen and (max-width: 768px) {
+  .motto__box {
+    display: block;
+  }
+}
+
+.motto__box:nth-child(2) {
+  margin-top: 32px;
+}
+
+.motto__box:nth-child(2) .motto__txt-area {
+  order: 1;
+}
+
+.motto__box:nth-child(2) .motto__box--img {
+  order: 2;
+  border-radius: 40px;
+}
+
+.motto__box:nth-child(3) {
+  margin-top: 32px;
+}
+
+.motto__box--img {
+  width: 36.3636363636%;
+  min-width: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 40px;
+}
+@media screen and (max-width: 768px) {
+  .motto__box--img {
+    width: 76.1904761905%;
+    margin-inline: 11.9047619048%;
+    max-width: 450px;
+    min-width: 200px;
+    border-radius: 20px;
+    height: auto;
+  }
+}
+
+.motto__txt-area {
+  width: 60%;
+}
+@media screen and (max-width: 768px) {
+  .motto__txt-area {
+    width: 100%;
+  }
+}
+
+.motto__ttl-area {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #55000C;
+  width: 320px;
+}
+@media screen and (max-width: 768px) {
+  .motto__ttl-area {
+    width: 100%;
+    gap: 8px;
+    margin-top: 32px;
+    padding-bottom: 8px;
+  }
+}
+
+.motto__ttl-area--img {
+  width: 24px;
+  height: 24px;
+}
+
+.motto__ttl-area--ttl {
+  font-size: 20px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 3.2px;
+  line-height: 1;
+}
+@media screen and (max-width: 768px) {
+  .motto__ttl-area--ttl {
+    font-size: 18px;
+  }
+}
+
+.motto__txt-area--txt {
+  margin-top: 24px;
+  font-size: 16px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1.6px;
+  line-height: 2;
+  margin-top: 16px;
+}
+@media screen and (max-width: 768px) {
+  .motto__txt-area--txt {
+    font-size: 14px;
+  }
+}
+
+.requirement {
+  margin-top: 120px;
+}
+@media screen and (max-width: 768px) {
+  .requirement {
+    margin-top: 80px;
+  }
+}
+
+.requirement__body {
+  width: 75%;
+  max-width: 1080px;
+  margin-inline: auto;
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 40px;
+  margin-top: 64px;
+}
+@media screen and (max-width: 768px) {
+  .requirement__body {
+    margin-top: 48px;
+    width: 92%;
+    margin-inline: auto;
+    max-width: 500px;
+    border-radius: 30px;
+  }
+}
+
+.recruit__item {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 25px;
+  border-bottom: 1px dotted #55000C;
+}
+@media screen and (max-width: 768px) {
+  .recruit__item {
+    display: block;
+    border: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .recruit__item:first-child .recruit__item--left {
+    margin-top: 0;
+  }
+}
+
+.recruit__item:last-child {
+  border-bottom: 0;
+}
+
+.recruit__item--left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  min-width: 200px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-color: #ef8f9c;
+  color: #fff;
+  border-radius: 15px;
+  font-size: 18px;
+  margin: 32px 0;
+  line-height: 1;
+  letter-spacing: 0.2em;
+}
+@media screen and (max-width: 768px) {
+  .recruit__item--left {
+    width: 100%;
+    height: 30px;
+    margin: 24px 0;
+  }
+}
+
+.recruit__right--txt {
+  font-size: 16px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 3.2px;
+  line-height: 1.5;
+  margin: 32px 0;
+}
+@media screen and (max-width: 768px) {
+  .recruit__right--txt {
+    padding-inline: 5.0505050505%;
+    font-size: 14px;
+    margin: 0;
+  }
+}
+
+.recruit__right--txt-span {
+  font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+  .recruit__right--txt-span {
+    font-size: 12px;
+  }
+}
+
+.recruit__right--txt-small {
+  font-size: 14px;
+  margin: 32px 0;
+}
+@media screen and (max-width: 768px) {
+  .recruit__right--txt-small {
+    font-size: 12px;
+    margin: 0;
+    padding-inline: 5.0505050505%;
+  }
+}
+
+.faq {
+  margin-top: 120px;
+}
+@media screen and (max-width: 768px) {
+  .faq {
+    margin-top: 80px;
+  }
+}
+
+.faq__body {
+  width: 75%;
+  max-width: 1080px;
+  margin-inline: auto;
+}
+@media screen and (max-width: 768px) {
+  .faq__body {
+    width: 92%;
+    max-width: 500px;
+  }
+}
+
+.accordion-area__item {
+  padding: 20px 32px;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 2px solid #ef8f9c;
+  margin-top: 24px;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .accordion-area__item {
+    padding: 20px 24px;
+  }
+}
+.accordion-area__item .close {
+  border-bottom: 1px dotted #000;
+}
+.accordion-area__item:hover {
+  opacity: 0.6;
+  transition: opacity 0.7s;
+}
+
+@media (any-hover: hover) {
+  .accordion-area__item:hover {
+    opacity: 0.6;
+  }
+}
+.accordion-area__item:first-child {
+  margin-top: 64px;
+}
+
+.accordion-area__item--ttl {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 18px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  line-height: 1;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .accordion-area__item--ttl {
+    font-size: 16px;
+    padding-right: 24px;
+    line-height: 1.5;
+  }
+}
+
+.accordion-area__item--Q {
+  margin-right: 32px;
+  font-size: 18px;
+  width: 9px;
+}
+
+.fa-play {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0%, -50%) rotate(90deg);
+  color: #ef8f9c;
+  font-size: 12px;
+}
+
+.accordion-area__txt {
+  display: none;
+  margin-top: 32px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: flex;
+  justify-content: left;
+  gap: 32px;
+  font-size: 16px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+}
+@media screen and (max-width: 768px) {
+  .accordion-area__txt {
+    margin-top: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 14px;
+  }
+}
+
+.accordion-area__item--A {
+  font-size: 18px;
+}
+
+.accordion-area__item--box {
+  display: none;
+}
+
+.contact-form {
+  width: 75%;
+  max-width: 1080px;
+  margin-top: 96px;
+  margin-inline: auto;
+  margin-bottom: 120px;
+}
+@media screen and (max-width: 768px) {
+  .contact-form {
+    width: 92%;
+    max-width: 500px;
+    margin-top: 80px;
+    margin-inline: auto;
+    margin-bottom: 80px;
+  }
+}
+
+.contact-form__body {
+  width: 100%;
+  padding: 64px 12.962962963%;
+  background-color: #fff;
+  border-radius: 40px;
+}
+@media screen and (max-width: 1024px) {
+  .contact-form__body {
+    padding: 64px 7.4074074074%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact-form__body {
+    padding: 32px 15px;
+    border-radius: 30px;
+  }
+}
+
+.contact-form__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+@media screen and (max-width: 768px) {
+  .contact-form__item {
+    display: block;
+  }
+}
+.contact-form__item input {
+  padding-left: 10px;
+}
+.contact-form__item textarea {
+  padding: 10px;
+}
+
+.contact-form__left {
+  width: 37.5%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+@media screen and (max-width: 768px) {
+  .contact-form__left {
+    width: 100%;
+  }
+}
+
+.contact-form__left--txt {
+  font-size: 16px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+}
+
+.contact-form__left--required {
+  width: 42px;
+  background-color: #ef8f9c;
+  color: #fff;
+  padding: 0px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+span.contact-form__left--required {
+  padding: 4px 8px;
+  white-space: nowrap;
+}
+
+.contact-form__left--free {
+  width: 42px;
+  background-color: #333333;
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.contact-form__right {
+  width: 58.5%;
+  overflow: hidden;
+  color: #333333;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 768px) {
+  .contact-form__right {
+    width: 100%;
+    margin-top: 16px;
+  }
+}
+
+.contact-form__right--txt-area {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #333333;
+  border-radius: 4px;
+}
+
+.contact-form__place {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+.contact-form__place .wpcf7-form-control-wrap {
+  width: 65.811965812%;
+}
+@media screen and (max-width: 768px) {
+  .contact-form__place .wpcf7-form-control-wrap {
+    width: 49.2063492063%;
+  }
+}
+
+.contact-form__place:last-child {
+  margin-bottom: 0;
+}
+
+.contact-form__place--txt {
+  font-size: 16px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  color: #333333;
+}
+
+.contact-form__place--txt-area {
+  height: 40px;
+  border: 1px solid #333333;
+  border-radius: 4px;
+  width: 100%;
+  white-space: nowrap;
+}
+@media screen and (max-width: 768px) {
+  .contact-form__place--txt-area {
+    width: 100%;
+  }
+}
+
+.rule {
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .rule {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 768px) {
+  .rule .contact-form__left--required {
+    display: none;
+  }
+}
+
+.rule__txt {
+  margin-inline: auto;
+  font-size: 16px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  color: #333333;
+}
+
+.contact-form__left--sp-required {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .contact-form__left--sp-required {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 42px;
+    background-color: #ef8f9c;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-top: 12px;
+  }
+}
+
+.contact-form .button-link {
+  margin-top: 48px;
+}
+
+.contact-form__right--check-box {
+  flex-direction: column;
+  display: flex;
+  gap: 10px;
+  margin-left: -16px;
+}
+
+.contact-form__right--small-txt {
+  width: 100%;
+  height: 100px;
+  border-radius: 4px;
+  border: 1px solid #333333;
+  margin-top: 10px;
+}
+
+.wpcf7-list-item {
+  display: block;
+  line-height: 1;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.wpcf7-list-item-label {
+  position: relative;
+  height: 20px;
+  line-height: 1.5;
+  padding-left: 28px;
+  display: inline-block;
+  color: #333333;
+  font-family: "Kosugi Maru", sans-serif;
+  cursor: pointer;
+}
+.wpcf7-list-item-label:hover {
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+@media (any-hover: hover) {
+  .wpcf7-list-item-label:hover {
+    opacity: 0.5;
+  }
+}
+.wpcf7-list-item-label::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #333333;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  box-sizing: border-box;
+}
+
+.rule .wpcf7-list-item-label::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #333333;
+  border-radius: 2px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  box-sizing: border-box;
+}
+
+input[type=checkbox]:checked + .wpcf7-list-item-label::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 6px;
+  border-top: 3px solid #3d8582;
+  border-right: 3px solid #3d8582;
+  transform: rotate(135deg);
+  position: absolute;
+  left: 5px;
+  top: 4px;
+}
+
+.contact-form__right--big-txt {
+  width: 100%;
+  border: 1px solid #333333;
+  border-radius: 4px;
+  height: 200px;
+}
+@media screen and (max-width: 768px) {
+  .contact-form__right--big-txt {
+    margin-top: 16px;
+  }
+}
+
+.recruit-confirm .contact-form__item {
+  justify-content: left;
+  gap: 32px;
+}
+
+.recruit-confirm__right--txt {
+  font-size: 16px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  color: #333333;
+}
+
+.recruit-confirm .contact-form__place {
+  justify-content: left;
+  gap: 10px;
+}
+@media screen and (max-width: 768px) {
+  .recruit-confirm .contact-form__place {
+    display: block;
+  }
+}
+
+.recruit-confirm .contact-form__place--txt {
+  width: 150px;
+}
+@media screen and (max-width: 768px) {
+  .recruit-confirm .contact-form__place--txt {
+    margin-top: 4px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .recruit-confirm .contact-form__right {
+    margin-top: 8px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .recruit-thanks .page__ttl-are--ttl {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .recruit-thanks .page__ttl-are--ttl {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+
+.recruit-thanks .page__ttl-are--ttl br {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .recruit-thanks .page__ttl-are--ttl br {
+    display: block;
+  }
+}
+
+.recruit-thanks__txt {
+  font-size: 20px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  color: #333333;
+  text-align: center;
+  margin-top: 80px;
+}
+@media screen and (max-width: 768px) {
+  .recruit-thanks__txt {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 60px;
+    margin-inline: 4%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .recruit-thanks__txt {
+    text-align: left;
+  }
+}
+
+.recruit-thanks .button-link {
+  margin-top: 120px;
+  background-color: #fff;
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 768px) {
+  .recruit-thanks .button-link {
+    margin-top: 80px;
+  }
+}
+
+.contact .contact-form {
+  margin-top: 48px;
+}
+
+.contact__txt {
+  margin-top: 120px;
+  font-size: 16px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  color: #333333;
+  margin-inline: 12.5%;
+}
+@media screen and (max-width: 768px) {
+  .contact__txt {
+    margin-inline: auto;
+    margin-top: 80px;
+    max-width: 500px;
+    width: 92%;
+    font-size: 14px;
+  }
+}
+
+.contact__txt:nth-child(2) {
+  margin-top: 12px;
+  -webkit-text-decoration: 1px underline;
+          text-decoration: 1px underline;
+}
+@media screen and (max-width: 768px) {
+  .contact__txt:nth-child(2) {
+    padding-right: 7px;
+  }
+}
+
+.contact-confirm .contact-form__place {
+  justify-content: left;
+  gap: 10px;
+}
+@media screen and (max-width: 768px) {
+  .contact-confirm .contact-form__place {
+    display: block;
+  }
+}
+
+.contact-confirm .contact-form__place--txt {
+  width: 150px;
+}
+@media screen and (max-width: 768px) {
+  .contact-confirm .contact-form__place--txt {
+    margin-top: 4px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-confirm .contact-form__right {
+    margin-top: 8px;
+  }
+}
+
+.privacy__body {
+  width: 75%;
+  max-width: 1080px;
+  margin-top: 80px;
+  margin-inline: auto;
+  margin-bottom: 80px;
+  border-radius: 40px;
+  background-color: #fff;
+  padding: 48px 36px;
+}
+@media screen and (max-width: 768px) {
+  .privacy__body {
+    margin-top: 60px;
+    width: 92%;
+    max-width: 600px;
+    padding: 32px 15px;
+    border-radius: 30px;
+  }
+}
+
+.privacy__box {
+  width: 100%;
+  margin-top: 36px;
+}
+
+.privacy__box:first-of-type {
+  margin-top: 0;
+}
+
+.privacy__box--ttl {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 12px;
+  padding-left: 36px;
+  border: 1px solid #55000C;
+  color: #55000C;
+  position: relative;
+  border-radius: 12px;
+  font-size: 20px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1;
+}
+@media screen and (max-width: 768px) {
+  .privacy__box--ttl {
+    font-size: 16px;
+  }
+}
+
+.privacy__box--ttl::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 24px;
+  transform: translateY(-50%);
+  background-color: #55000C;
+  width: 4px;
+  height: 55.8823529412%;
+  border-radius: 1px;
+}
+
+.privacy__box--txt {
+  padding: 0px 12px;
+  font-size: 16px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  color: #333333;
+  margin-top: 8px;
+}
+@media screen and (max-width: 768px) {
+  .privacy__box--txt {
+    font-size: 14px;
+  }
+}
+
+.privacy__sub-box {
+  margin-top: 16px;
+}
+
+.privacy__sub-box--ttl {
+  padding: 0px 24px;
+  font-size: 16px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  color: #333333;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .privacy__sub-box--ttl {
+    font-size: 14px;
+  }
+}
+
+.privacy__sub-box--ttl::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  background-color: #FFF7B8;
+  width: 4px;
+  height: 100%;
+  border-radius: 1px;
+}
+
+.privacy__time-box {
+  text-align: right;
+  margin-top: 16px;
+}
+
+.privacy__info-area {
+  margin-top: 8px;
+  padding-left: 12px;
+}
+
+.privacy__info-area--ttl {
+  margin-bottom: 8px;
+  color: #333333;
+  font-size: 16px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+}
+@media screen and (max-width: 768px) {
+  .privacy__info-area--ttl {
+    font-size: 14px;
+  }
+}
+
+.privacy__info-area .privacy__box--txt {
+  margin-top: 4px;
+}
+
+.privacy__box--txt-br {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .privacy__box--txt-br {
+    display: block;
+  }
+}
+
+.site-map {
+  position: relative;
+  background-image: url(../img/top-letters__bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: auto;
+  margin-top: 134px;
+  padding-top: 114px;
+  padding-bottom: 80px;
+  border-top: 3px dotted #ef8f9c;
+  border-bottom: 3px dotted #ef8f9c;
+}
+@media screen and (max-width: 375px) {
+  .site-map {
+    background-image: url(../img/top-letters__sp-bg.jpeg);
+    margin-top: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-bottom: 80px;
+    padding-top: 74px;
+  }
+}
+
+.site-map__body {
+  width: 75%;
+  max-width: 1080px;
+  margin-inline: auto;
+  padding: 64px 9.7222222222%;
+  background-color: #fff;
+  border-radius: 40px;
+}
+@media screen and (max-width: 768px) {
+  .site-map__body {
+    width: 92%;
+    padding: 32px 6%;
+    border-radius: 30px;
+  }
+}
+
+.site-map__left {
+  display: flex;
+  gap: 10%;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 1024px) {
+  .site-map__left {
+    justify-content: center;
+  }
+}
+
+.site-map__list {
+  width: 45%;
+  min-width: 260px;
+}
+@media screen and (max-width: 1024px) {
+  .site-map__list {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .site-map__list {
+    width: 100%;
+  }
+}
+
+.site-map__item--link {
+  display: block;
+  font-size: 20px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  border-bottom: 1px dotted #55000C;
+  padding: 4px 12px 4px 32px;
+  position: relative;
+  color: #55000C;
+}
+@media screen and (max-width: 768px) {
+  .site-map__item--link {
+    font-size: 16px;
+  }
+}
+
+.site-map__item--link::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  background-color: #FFF7B8;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.site-map__item--link::after {
+  content: ">";
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  color: #55000C;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.not-page {
+  max-width: 1080px;
+  width: 75%;
+  margin-inline: auto;
+  margin-top: 120px;
+}
+@media screen and (max-width: 375px) {
+  .not-page {
+    width: 92%;
+  }
+}
+
+.not-page__txt {
+  font-size: 20px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1.5;
+  margin-top: 24px;
+  color: #333333;
+}
+@media screen and (max-width: 375px) {
+  .not-page__txt {
+    font-size: 17px;
+  }
+}
+
+.not-page__txt:first-child {
+  margin-top: 0;
+}
+
+.header {
+  background-image: url(../img/header.webp);
+  width: 100%;
+  height: 251px;
+  padding-top: 92px;
+  position: absolute;
+  z-index: 99;
+  background-size: 100% 251px;
+}
+@media screen and (max-width: 1024px) {
+  .header {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 375px) {
+  .header {
+    display: none;
+  }
+}
+
+.header__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__list {
+  color: #55000C;
+  border-left: 1px dotted;
+  position: relative;
+}
+@media screen and (max-width: 1024px) {
+  .header__list {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header__list:nth-child(4) {
+    display: block;
+    border-left: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header__list:nth-child(4)::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header__list:nth-child(4)::after {
+    display: none;
+  }
+}
+
+.header__list::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: -4.5px;
+  left: -4.5px;
+  background-color: #55000C;
+  border-radius: 50%;
+}
+
+.header__list::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  bottom: -4.5px;
+  left: -4.5px;
+  background-color: #55000C;
+  border-radius: 50%;
+}
+
+.header__list:last-child {
+  color: #55000C;
+  border-right: 1px dotted;
+}
+
+.header__list--link {
+  display: block;
+  width: 150px;
+  max-width: 150px;
+  padding: 4.5px 6.5px 5.5px;
+  text-align: center;
+  position: relative;
+}
+@media (max-width: 1230px) {
+  .header__list--link {
+    width: 130px;
+    height: 95px;
+  }
+}
+@media (max-width: 1100px) {
+  .header__list--link {
+    width: 110px;
+  }
+}
+
+.header__list-center--link {
+  display: block;
+  width: 289px;
+  padding: 7.6px 6.5px;
+  text-align: center;
+}
+@media screen and (max-width: 1024px) {
+  .header__list-center--link {
+    padding: 0 6.5px;
+  }
+}
+
+.header__list-curcle::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: -4.5px;
+  right: -4.5px;
+  background-color: #55000C;
+  border-radius: 50%;
+}
+
+.header__list-curcle::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  bottom: -4.5px;
+  right: -4.5px;
+  background-color: #55000C;
+  border-radius: 50%;
+}
+
+.header__list--img {
+  width: 40px;
+  height: 40px;
+}
+
+.header__list--logo {
+  width: 280px;
+  height: 88px;
+}
+
+.header__list--jp {
+  font-family: "Kosugi Maru", sans-serif;
+  line-height: 1.2;
+  font-weight: 400;
+  margin-top: 12px;
+  color: #55000C;
+}
+@media (max-width: 1200px) {
+  .header__list--jp {
+    font-size: 13px;
+  }
+}
+@media (max-width: 1100px) {
+  .header__list--jp {
+    font-size: 11px;
+  }
+}
+
+.header__list--en {
+  font-family: "Jost", sans-serif;
+  line-height: 1;
+  font-weight: 900;
+  margin-top: 4px;
+  font-size: 10px;
+  color: #55000C;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 1024px) {
+  .header__list--en {
+    font-size: 8px;
+  }
+}
+
+.sp-header {
+  position: relative;
+}
+
+.sp-header__area {
+  display: none;
+}
+@media screen and (max-width: 375px) {
+  .sp-header__area {
+    background-image: url(../img/sp-header.webp);
+    width: 100%;
+    height: auto;
+    min-height: 157px;
+    padding-top: 43px;
+    position: absolute;
+    z-index: 99;
+    display: block;
+    margin-top: -8px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.sp-header__logo {
+  display: none;
+}
+@media screen and (max-width: 375px) {
+  .sp-header__logo {
+    display: block;
+    z-index: 100;
+    position: absolute;
+    top: 43px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.sp-header__logo--img {
+  width: 200px;
+  height: auto;
+}
+
+.hum-menu {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .hum-menu {
+    display: block;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    position: absolute;
+    top: 14px;
+    right: 12px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #55000C;
+    z-index: 1001;
+  }
+}
+
+.hum-menu span {
+  display: inline-block;
+  transition: all 0.4s;
+  position: absolute;
+  left: 11px;
+  height: 1px;
+  border-radius: 0.5px;
+  background: #55000C;
+  width: 53%;
+}
+
+.hum-menu span:nth-of-type(1) {
+  top: 14px;
+}
+
+.hum-menu span:nth-of-type(2) {
+  top: 20px;
+}
+
+.hum-menu span:nth-of-type(3) {
+  top: 26px;
+}
+
+.hum-menu p {
+  margin-top: 26px;
+  font-size: 10px;
+  font-family: "Jost", sans-serif;
+  font-weight: 900;
+  letter-spacing: 0em;
+  line-height: 1.2;
+  text-align: center;
+  color: #55000C;
+}
+
+.hum-menu.active p {
+  display: none;
+}
+
+.hum-menu__close {
+  display: none;
+}
+
+.hum-menu.active .hum-menu__close {
+  display: block;
+}
+
+.hum-menu.active span:nth-of-type(1) {
+  top: 10px;
+  left: 6.5px;
+  transform: translateY(6px) rotate(-23deg);
+  width: 75%;
+}
+
+.hum-menu.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.hum-menu.active span:nth-of-type(3) {
+  top: 22px;
+  left: 6.5px;
+  transform: translateY(-6px) rotate(23deg);
+  width: 75%;
+}
+
+.hum-list {
+  width: 92%;
+  height: 721px;
+  padding: 150px 4.347826087%;
+  border-radius: 40px;
+  display: none;
+  position: absolute;
+  right: 0;
+  position: fixed;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.8);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-backdrop-filter: blur(3.5px);
+          backdrop-filter: blur(3.5px);
+}
+
+.hum-list__area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px 4%;
+}
+
+.hum-list__area--list {
+  width: 47.619047619%;
+  text-align: center;
+  border-radius: 12px;
+  border: 1px solid #55000C;
+  max-width: 150px;
+}
+.hum-list__area--list a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.hum-list__area--img {
+  width: 48px;
+  height: auto;
+}
+
+.hum-list__area--jp {
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #55000C;
+  letter-spacing: 0.04em;
+  margin-top: 12px;
+}
+@media (max-width: 374px) {
+  .hum-list__area--jp {
+    font-size: 12px;
+  }
+}
+
+.hum-list__area--en {
+  font-size: 10px;
+  line-height: 1.2;
+  font-family: "Jost", sans-serif;
+  font-weight: 900;
+  margin-top: 4px;
+  letter-spacing: 0.1em;
+  color: #55000C;
+}
+@media (max-width: 374px) {
+  .hum-list__area--en {
+    font-size: 8px;
+  }
+}
+
+.hum-list.active {
+  display: block;
+}
+
+.fixed-background {
+  overflow: hidden;
+}
+
+.page__ttl-area {
+  margin: 299px auto 0;
+  width: 75%;
+  max-width: 1440px;
+}
+@media screen and (max-width: 768px) {
+  .page__ttl-area {
+    margin-top: 299px;
+  }
+}
+@media (max-width: 600px) {
+  .page__ttl-area {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .page__ttl-area {
+    width: 92%;
+    margin-top: 156px;
+  }
+}
+
+.page__ttl-area--area {
+  position: relative;
+  width: 100%;
+}
+
+.page__ttl-area--img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  .page__ttl-area--img {
+    display: none;
+  }
+}
+
+.page__ttl-area--sp-img {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .page__ttl-area--sp-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-inline: auto;
+  }
+}
+@media screen and (max-width: 375px) {
+  .page__ttl-area--sp-img {
+    width: 100%;
+    max-width: 345px;
+  }
+}
+
+.page__ttl-are--txta-area {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.page__ttl-are--ttl {
+  font-family: "Kosugi Maru", sans-serif;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+  font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  .page__ttl-are--ttl {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .page__ttl-are--ttl {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .single-introduction .page__ttl-are--ttl {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .single-introduction .page__ttl-are--ttl {
+    font-size: 18px;
+  }
+}
+
+.page__ttl-are--en {
+  font-family: "Jost", sans-serif;
+  font-size: 10px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+  margin-top: 16px;
+  font-weight: bold;
+}
+@media screen and (max-width: 375px) {
+  .page__ttl-are--en {
+    margin-top: 12px;
+  }
+}
+
+.ttl-area {
+  text-align: center;
+}
+
+.ttl-area__logo {
+  width: 108px;
+  height: 108px;
+  margin-inline: auto;
+}
+@media screen and (max-width: 768px) {
+  .ttl-area__logo {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.welcom__logo--img {
+  width: 100%;
+  height: auto;
+}
+
+.ttl-area__ttl {
+  margin-top: 8px;
+  font-size: 24px;
+  font-family: "Kosugi Maru", sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 375px) {
+  .ttl-area__ttl {
+    margin-top: 8px;
+    font-size: 20px;
+  }
+}
+
+.ttl-area__en {
+  margin-top: 8px;
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0.2em;
+  font-size: 10px;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 375px) {
+  .ttl-area__en {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+}
+
+.breadcrumbs {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  color: #55000C;
+}
+@media screen and (max-width: 768px) {
+  .breadcrumbs {
+    gap: 5px;
+  }
+}
+.breadcrumbs a {
+  color: #55000C;
+  font-size: 16px;
+  font-family: "Kosugi Maru", sans-serif;
+  line-height: 1.5;
+}
+@media screen and (max-width: 375px) {
+  .breadcrumbs a {
+    font-size: 14px;
+  }
+}
+.breadcrumbs .archive {
+  color: #55000C;
+  font-size: 16px;
+  font-family: "Kosugi Maru", sans-serif;
+  line-height: 1.5;
+}
+@media screen and (max-width: 375px) {
+  .breadcrumbs .archive {
+    font-size: 14px;
+  }
+}
+.breadcrumbs .post {
+  color: #55000C;
+  font-size: 16px;
+  font-family: "Kosugi Maru", sans-serif;
+  line-height: 1.5;
+}
+@media screen and (max-width: 375px) {
+  .breadcrumbs .post {
+    font-size: 14px;
+  }
+}
+
+.breadcrumbs__top {
+  color: #55000C;
+  font-size: 16px;
+  font-family: "Kosugi Maru", sans-serif;
+  line-height: 1.5;
+}
+@media screen and (max-width: 375px) {
+  .breadcrumbs__top {
+    font-size: 14px;
+  }
+}
+
+.breadcrumbs__second {
+  color: #55000C;
+  font-size: 16px;
+  font-family: "Kosugi Maru", sans-serif;
+  line-height: 1.5;
+}
+@media screen and (max-width: 375px) {
+  .breadcrumbs__second {
+    font-size: 14px;
+  }
+}
+
+.single-post {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 40px;
+  padding: 32px;
+  padding-bottom: 64px;
+  color: #333333;
+  max-width: 960px;
+}
+@media screen and (max-width: 768px) {
+  .single-post {
+    padding: 32px 15px 64px;
+  }
+}
+
+.single-post__up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .single-post__up {
+    display: block;
+  }
+}
+
+.single-post__up--left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+@media screen and (max-width: 768px) {
+  .single-post__up--left {
+    gap: 14px;
+    justify-content: left;
+  }
+}
+
+.single-post__up--img {
+  width: 16px;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  .single-post__up--img {
+    width: 14px;
+  }
+}
+
+.single-post__up--txt {
+  font-size: 18px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+}
+@media screen and (max-width: 768px) {
+  .single-post__up--txt {
+    font-size: 16px;
+  }
+}
+
+.single-post__up--right {
+  font-size: 14px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+}
+@media screen and (max-width: 768px) {
+  .single-post__up--right {
+    margin-top: 12px;
+    font-size: 12px;
+  }
+}
+
+.single-post__ttl {
+  font-size: 32px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  line-height: 1.2;
+  margin-top: 12px;
+}
+@media screen and (max-width: 768px) {
+  .single-post__ttl {
+    font-size: 20px;
+    letter-spacing: 0.1em;
+  }
+}
+
+.single-post__body {
+  border-top: 2px solid #333333;
+  margin-top: 12px;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .single-post__body {
+    border-top: 1px solid #333333;
+  }
+}
+
+.single-post__body--img {
+  margin-top: 32px;
+  width: 71.4285714286%;
+  height: auto;
+  margin-inline: 14.2857142857%;
+  border-radius: 40px;
+}
+@media screen and (max-width: 375px) {
+  .single-post__body--img {
+    margin-top: 24px;
+    width: 100%;
+    margin-inline: auto;
+    border-radius: 20px;
+  }
+}
+
+.single-post__box {
+  margin-top: 32px;
+}
+@media screen and (max-width: 768px) {
+  .single-post__box {
+    margin-top: 24px;
+  }
+}
+
+.single-post__body--ttl {
+  font-size: 16px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 2;
+  position: relative;
+  padding-left: 16px;
+}
+
+.single-post__body--ttl::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 32px;
+  background-color: #ef8f9c;
+  left: 4px;
+  border-radius: 2px;
+}
+
+.single-post__body--txt {
+  font-size: 16px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 2;
+  margin-top: 8px;
+}
+
+.single-info .single-post__box {
+  margin-top: 36px;
+}
+
+.single-info .single-post__box:first-child {
+  margin-top: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .single-info .button-link {
+    margin-top: 48px;
+  }
+}
+
+.button-link {
+  width: 100%;
+  max-width: 300px;
+  position: relative;
+  border: 2px solid #55000C;
+  margin-inline: auto;
+  border-radius: 30px;
+  height: 60px;
+  margin-top: 64px;
+}
+.button-link::before {
+  position: absolute;
+  content: "";
+  top: 43%;
+  right: 24px;
+  transform: rotate(45deg);
+  background-color: #55000C;
+  width: 12px;
+  height: 2px;
+}
+.button-link::after {
+  position: absolute;
+  content: "";
+  top: 56%;
+  transform: rotate(-45deg);
+  right: 24px;
+  background-color: #55000C;
+  width: 12px;
+  height: 2px;
+}
+
+.button-link-txt {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  color: #55000C;
+}
+.button-link-txt:hover {
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+@media (any-hover: hover) {
+  .button-link-txt:hover {
+    opacity: 0.5;
+  }
+}
+
+.fadeUp {
+  animation-name: fadeUpAnime;
+  animation-duration: 1.7s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(130px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+a.fadeUp:hover {
+  opacity: 0.5 !important;
+  transition: opacity 0.3s;
+}
+
+.fadeOutTarget {
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+.fadeOutTarget.hidden {
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+#page-top a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+  color: #55000C;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.6rem;
+  transition: all 0.3s;
+  position: relative;
+}
+@media screen and (max-width: 375px) {
+  #page-top a {
+    width: 48px;
+    height: 48px;
+    font-size: 0.3rem;
+  }
+}
+
+.fa-angle-up {
+  font-size: 30px;
+}
+
+#page-top {
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(0);
+}
+
+#page-top.InMove {
+  animation: FadeInAnime 1.2s forwards;
+}
+
+@keyframes FadeInAnime {
+  from {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#page-top.OutMove {
+  animation: FadeOutAnime 1.2s forwards;
+}
+
+@keyframes FadeOutAnime {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(0);
+  }
+}
+.search__heading--txt {
+  color: #55000C;
+  font-size: 24px;
+  line-height: 1.2;
+  display: inline-block;
+  cursor: pointer;
+}
+@media screen and (max-width: 375px) {
+  .search__heading--txt {
+    font-size: 20px;
+  }
+}
+.search__heading--txt .fa-neuter {
+  margin-right: 12px;
+  transform: rotate(-45deg);
+}
+@media screen and (max-width: 375px) {
+  .search__heading--txt .fa-neuter {
+    font-size: 20px;
+    margin-right: 8px;
+  }
+}
+
+.search__heading--txt:hover {
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+@media (any-hover: hover) {
+  .search__heading--txt:hover {
+    opacity: 0.5;
+  }
+}
+.search {
+  width: 100%;
+  height: auto;
+  padding-bottom: 12px;
+}
+.search li {
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid #333333;
+  background-color: #fff;
+  padding: 0 16px;
+  position: relative;
+}
+.search li:nth-child(1) {
+  width: 240px;
+}
+.search li:nth-child(1)::before {
+  content: "";
+  width: 10px;
+  height: 2px;
+  transform: rotate(-40deg);
+  position: absolute;
+  right: 16px;
+  background-color: #333333;
+}
+.search li:nth-child(1)::after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  right: 22px;
+  transform: rotate(40deg);
+  position: absolute;
+  background-color: #333333;
+}
+.search li:nth-child(2) {
+  width: 200px;
+}
+.search li:nth-child(2)::before {
+  content: "";
+  width: 10px;
+  height: 2px;
+  transform: rotate(-40deg);
+  position: absolute;
+  right: 16px;
+  background-color: #333333;
+}
+.search li:nth-child(2)::after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  transform: rotate(40deg);
+  position: absolute;
+  right: 22px;
+  background-color: #333333;
+}
+.search li:nth-child(3) {
+  width: 36px;
+  background-color: #55000C;
+  border: 0px;
+  position: relative;
+  display: block !important;
+}
+.search li:nth-child(3)::after {
+  content: "⚪︎";
+  position: absolute;
+  color: #fff;
+  font-size: 25px;
+  top: 35%;
+  left: 35%;
+  transform: translate(-40%, -40%);
+}
+.search li:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 1.5px;
+  top: 24px;
+  left: 19px;
+  transform: rotate(45deg);
+  background-color: #fff;
+}
+.search li:nth-child(3) input:last-child {
+  width: 36px;
+  height: 36px;
+  color: transparent;
+  text-shadow: none;
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  top: 0;
+}
+.search li select {
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.search li select:hover {
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+@media (any-hover: hover) {
+  .search li select:hover {
+    opacity: 0.5;
+  }
+}
+
+.searchandfilter ul {
+  display: flex !important;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.searchandfilter li {
+  display: flex !important;
+  justify-content: left;
+  align-items: center;
+}
+
+.wp-pagenavi {
+  text-align: center;
+  width: 100%;
+  margin-top: 32px;
+}
+
+.wp-pagenavi .pages {
+  display: none;
+}
+.wp-pagenavi .nextpostslink {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #ef8f9c;
+  border: 1px solid #ef8f9c;
+  font-size: 16px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.wp-pagenavi .previouspostslink {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #ef8f9c;
+  border: 1px solid #ef8f9c;
+  font-size: 16px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.wp-pagenavi .page {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #ef8f9c;
+  border: 1px solid #ef8f9c;
+  font-size: 16px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.wp-pagenavi .current {
+  background-color: #ef8f9c;
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+  border: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wp-pagenavi a:hover {
+  border: #ef8f9c;
+}
+
+.archive-post__list-area .wp-pagenavi {
+  margin-top: 32px;
+}/*# sourceMappingURL=style.css.map */

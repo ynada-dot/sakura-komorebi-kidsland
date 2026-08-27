@@ -1,0 +1,25 @@
+@use "../global/" as *;
+.not-page {
+    max-width: 1080px;
+    width: calc((1080/1440)*100%);
+    margin-inline: auto;
+    margin-top: 120px;
+    @include mq(ip){
+        width: calc((345/375)*100%);
+    }
+}
+.not-page__txt {
+    font-size: 20px;
+    font-family: $kosugi-maru;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+    margin-top: 24px;
+    color: $second-text;
+    @include mq(ip){
+        font-size: 17px;
+    }
+}
+.not-page__txt:first-child{
+    margin-top: 0;
+}

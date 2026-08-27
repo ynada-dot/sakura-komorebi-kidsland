@@ -1,0 +1,90 @@
+@use "../global/" as *;
+.site-map {
+    position: relative;
+    background-image: url(../img/top-letters__bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: auto;
+    margin-top: 134px;
+    padding-top: 114px;
+    padding-bottom: 80px;
+    border-top: 3px dotted $hover-color;
+    border-bottom: 3px dotted $hover-color;
+    @include mq(ip){
+        background-image: url(../img/top-letters__sp-bg.jpeg);
+        margin-top: 80px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding-bottom: 80px;
+        padding-top: 74px;
+    }
+}
+.site-map__body {
+    width: calc((1080/1440)*100%);
+    max-width: 1080px;
+    margin-inline: auto;
+    padding: 64px calc((140/1440)*100%);
+    background-color: #fff;
+    border-radius: 40px;
+    @include mq(sp){
+        width: calc((345/375)*100%);
+        padding: 32px calc((22.5/375)*100%);
+        border-radius: 30px;
+    }
+}
+.site-map__left {
+    display: flex;
+    gap: calc((80/800)*100%);
+    flex-wrap: wrap;
+    @include mq(tab){
+        justify-content: center;
+    }
+}
+.site-map__list {
+    width: calc((360/800)*100%);
+    min-width: 260px;
+    @include mq(tab){
+        width: 75%;
+    }
+    @include mq(ip){
+        width: 100%;
+    }
+}
+.site-map__item--link {
+    display: block;
+    font-size: 20px;
+    font-family: $kosugi-maru;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+    border-bottom: 1px dotted $text;
+    padding: 4px 12px 4px 32px;
+    position: relative;
+    color: $text;
+    @include mq(sp){
+        font-size: 16px;
+    }
+}
+.site-map__item--link::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    background-color: $second-back;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+.site-map__item--link::after{
+    content: ">";
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    color: $text;
+    font-size: 16px;
+    font-weight: bold;
+}

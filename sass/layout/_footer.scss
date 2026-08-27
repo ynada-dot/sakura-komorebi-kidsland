@@ -1,0 +1,74 @@
+@use "../global/" as *;
+.footer {
+    margin-top: -6px;
+    padding-top: 48px;
+    padding-bottom: 12px;
+    background: linear-gradient(to bottom, #FFFEF3, #FFF7B8);
+}
+.footer__logo {
+    width: 240px;
+    height: auto;
+    margin-inline: auto;
+    object-fit: contain;
+}
+.footer__body {
+    margin-top: 48px;
+    margin-inline: calc((180/1440)*100%);
+    padding-inline: calc((97/1440)*100%);
+    @include mq(ip){
+        width: calc((324/375)*100%);
+        margin-inline: calc((25.5/375)*100%);
+        padding-inline:0 ;
+    }
+}
+.footer__item-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    @include mq(ip){
+        justify-content: left;
+    }
+}
+.footer__item-area--item {
+    padding-right: 24px;
+    @include mq(ip){
+        width: calc((150/324)*100%);
+        padding-right: 0;
+    }
+}
+.footer__item-area--link {
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+    font-family: $kosugi-maru;
+    color: $text;
+    @include mq(ip){
+        font-size: 14px;
+    }
+}
+.footer__item-area--item:nth-child(7) .footer__item-area--link{
+    @include mq(ip){
+        font-size: 12px;
+    }
+}
+.footer__item-area--item:nth-child(8) .footer__item-area--link{
+    @include mq(ip){
+        font-size: 12px;
+    }
+}
+.footer__foot {
+    font-family: $kosugi-maru;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+    color: $second-text;
+    margin-inline: auto;
+    text-align: center;
+    margin-top: 48px;
+    @include mq(ip){
+        font-size: 12px;
+        text-align: center;
+    }
+}

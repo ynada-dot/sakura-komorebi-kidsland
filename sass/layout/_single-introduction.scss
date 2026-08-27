@@ -1,0 +1,394 @@
+@use "../global/" as *;
+.single-introduction__main {
+    width: calc((1080/1440)*100%);
+    margin-inline: calc((180/1440)*100%);
+    text-align: center;
+    margin-top: 80px;
+    @include mq(sp){
+        width: calc((345/375)*100%);
+        margin-inline: auto;
+        margin-top: 60px;
+    }
+}
+.single-introduction__body--img {
+    width: calc((800/1080)*100%);
+    max-width: 800px;
+    height: auto;
+    border-radius: 40px;
+    @include mq(sp){
+        width: 80%;
+        border-radius: 20px;
+    }
+    @include mq(ip){
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+.single-introduction__ttl {
+    margin-top: 32px;
+    font-size: 20px;
+    font-family: $kosugi-maru;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    line-height: 1;
+    @include mq(sp){
+        font-size: 18px;
+        line-height: 1.5;
+        margin-top: 24px;
+    }
+}
+.single-introduction__ttl br{
+    display: none;
+    @include mq(sp){
+        display: block;
+    }
+}
+.single-introduction__txt {
+    margin-top: 16px;
+    font-size: 18px;
+    font-family: $kosugi-maru;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    line-height: 2;
+    @include mq(sp){
+        font-size: 16px;
+        text-align: left;
+        margin-top: 12px;
+    }
+}
+.inside {
+    position: relative;
+}
+.inside__body {
+    background-image: url(../img/top-letters__bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 162px;
+    padding-top: 184px;
+    padding-bottom: 120px;
+    width: 100%;
+    border-top: 3px dotted $hover-color;
+    border-bottom: 3px dotted $hover-color;
+    @include mq(ip){
+        padding: 120px 0 80px;
+    }
+}
+.slider {
+
+}
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider img {
+    width: 100%;
+    height: 166px;
+    border-radius: 20px;
+    object-fit: cover;
+    @include mq(sp){
+        border-radius: 16px;
+        height: 162;
+    }
+    @include mq(ip){
+        border-radius: 12px;
+        height: 75px;
+    }
+}
+  
+.slider .slick-slide {
+    margin:0 6px;/*スライド左右の余白調整*/
+}
+.message {
+    width: calc((1080/1440)*100%);
+    margin-inline: auto;
+    margin-top: 120px;
+    @include mq(sp){
+        width: calc((345/375)*100%);
+        margin-top: 80px;
+    }
+}
+.massage__body {
+    max-width: 800px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    gap: calc((32/800)*100%);
+    margin-top: 64px;
+    @include mq(sp){
+        display: block;
+        margin-top: 48px;
+    }
+}
+.massage__img-area {
+    width: calc((300/800)*100%);
+    @include mq(sp){
+        width: 200px;
+        margin-inline: auto;
+    }
+}
+.massage__img-area--img {
+    height: auto;
+    border-radius: 20px;
+}
+.massage__txt-area {
+    width: calc((468/800)*100%);
+    @include mq(sp){
+        width: 100%;
+    }
+}
+.massage__txt-area--txt {
+    font-size: 16px;
+    font-family: $kosugi-maru;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    line-height: 2;
+    @include mq(sp){
+        margin-top: 32px;
+        font-size: 14px;
+    }
+
+}
+.about-nursery {
+    width: calc((1080/1440)*100%);
+    margin-inline: auto;
+    margin-top: 120px;
+    @include mq(sp){
+        width: calc((345/375)*100%);
+        margin-top: 80px;
+    }
+}
+.about-nursery__body {
+    width: 100%;
+    margin-top: 64px;
+    @include mq(sp){
+
+    }
+}
+.about-nursery__box {
+    width: 100%;
+}
+.about-nursery__line {
+    border-bottom: 1px dotted $text;
+    display: flex;
+    width: 100%;
+    @include mq(sp){
+        display: block;
+        border-bottom: none;
+    }
+}
+.about-nursery__line:nth-child(4) .about-nursery__txt{
+    line-height: 1.5;
+}
+.about-nursery__line:nth-child(6) .about-nursery__txt {
+    @include mq(sp){
+        width: 100%;
+        margin-inline: auto;
+        display: block;
+        max-width: 500px;
+    }
+}
+.about-nursery__head {
+    background-color: #fff;
+    font-size: 18px;
+    font-family: $kosugi-maru;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    line-height: 1;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc((200/1080)*100%);
+    @include mq(sp){
+        width: 100%;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        font-size: 16px;
+    }
+}
+.about-nursery__txt {
+    font-size: 16px;
+    font-family: $kosugi-maru;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    line-height: 1;
+    padding-top: 33px;
+    padding-bottom: 33px;
+    padding-left: 25px;
+    width: calc((880/1080)*100%);
+    @include mq(sp){
+        padding-top: 18px;
+        padding-bottom: 18px;
+        padding-left: 12px;
+        width: 100%;
+        font-size: 14px;
+    }
+}
+.tel-number{
+    color: $text;
+    cursor: pointer;
+}
+.about-nursery__txt--br {
+    display: none;
+    @include mq(sp){
+        display: block;
+    }
+}
+.about-nursery__line:nth-child(3) .about-nursery__txt {
+    @include mq(sp){
+        line-height: 1.5;
+    }
+}
+.about-nursery__date {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 8px;
+    @include mq(sp){
+        gap: calc((32/345)*100%);
+    }
+}
+.about-nursery__date:nth-child(2){
+    margin-top: 8px;
+}
+.about-nursery__date--txt {
+    margin-top: 8px;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    line-height: 1;
+    @include mq(sp){
+        font-size: 12px;
+        line-height: 1.5;
+        font-weight: lighter;
+    }
+}
+.about-nursery__line:nth-child(6) div{
+    margin-top: 24px;
+}
+.about-nursery__each-area {
+    width: calc((600/880)*100%);
+    @include mq(sp){
+        width: 100%;
+    }
+}
+.about-nursery__each-nursery--ttl {
+    font-size: 16px;
+    font-family: $kosugi-maru;
+    font-weight: 400;
+}
+.about-nursery__each-nursery--line {
+    border: 1px solid $text;
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+}
+.about-nursery__each-nursery--line:nth-child(2){
+    border-top: 0px;
+}
+.about-nursery__each-nursery--head {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc((150/600)*100%);
+    border-right: 1px solid $text;
+    font-weight: 400;
+    @include mq(sp){
+        width: calc((140/321)*100%);
+    }
+}
+.about-nursery__each-nursery--txt {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    width: calc((450/600)*100%);
+    @include mq(sp){
+        width: calc((181/321)*100%);
+    }
+}
+.about-nursery__people {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 20px;
+    @include mq(sp){
+        gap: 8px;
+    }
+}
+.about-nursery__people--all {
+    background-color: $background;
+    color: $text;
+    font-size: 16px;
+    font-family: $kosugi-maru;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    line-height: 1.2;
+    width: calc((100/830)*100%);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    @include mq(sp){
+        font-size: 14px;
+        width: calc((75/345)*100%);
+    }
+}
+.about-nursery__line:nth-child(7) .about-nursery__txt{
+    @include mq(sp){
+        padding-left: 0;
+    }
+}
+.about-nursery__line:nth-child(8) .about-nursery__txt{
+    @include mq(sp){
+        padding-left: 0;
+    }
+}
+.about-nursery__people-area--block {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 16px;
+    @include mq(sp){
+        gap: 8px;
+    }
+}
+.about-nursery__people-area--box {
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.about-nursery__people-area--old {
+    @include mq(sp){
+        font-size: 14px;
+        line-height: 1;
+        letter-spacing: 0;
+    }
+}
+.about-nursery__people-area--num {
+    margin-top: 16px;
+    @include mq(sp){
+        font-size: 14px;
+        line-height: 1;
+        letter-spacing: 0;
+    }
+}
+.about-nursery__warning{
+    margin-top: 10px;
+}
+.about-nursery__warning--txt {
+    font-size: 16px;
+    font-family: $kosugi-maru;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    line-height: 1;
+    @include mq(sp){
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}

@@ -1,0 +1,31 @@
+@use "../global/" as *;
+.recruit-confirm .contact-form__item {
+    justify-content: left;
+    gap: 32px;
+}
+.recruit-confirm__right--txt {
+    font-size: 16px;
+    font-family: $kosugi-maru;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+    color: $second-text;
+}
+.recruit-confirm .contact-form__place{
+    justify-content: left;
+    gap: 10px;
+    @include mq(sp){
+        display: block;
+    }
+}
+.recruit-confirm .contact-form__place--txt {
+    width: 150px;
+    @include mq(sp){
+        margin-top: 4px;
+    }
+}
+.recruit-confirm .contact-form__right{
+    @include mq(sp){
+        margin-top: 8px;
+    }
+}

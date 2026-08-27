@@ -1,0 +1,135 @@
+@use "../global/" as *;
+.single-post {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 32px;
+    padding-bottom: 64px;
+    color: $second-text;
+    max-width: 960px;
+    @include mq(sp){
+        padding: 32px 15px 64px;
+    }
+}
+.single-post__up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include mq(sp){
+        display: block;
+    }
+}
+.single-post__up--left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    @include mq(sp){
+        gap: 14px;
+        justify-content: left;
+    }
+}
+.single-post__up--img {
+    width: 16px;
+    height: auto;
+    @include mq(sp){
+        width: 14px;
+    }
+}
+.single-post__up--txt {
+    font-size: 18px;
+    font-family: $kosugi-maru;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+    @include mq(sp){
+        font-size: 16px;
+    }
+}
+.single-post__up--right {
+    font-size: 14px;
+    font-family: $kosugi-maru;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+    @include mq(sp){
+        margin-top: 12px;
+        font-size: 12px;
+    }
+}
+.single-post__ttl {
+    font-size: 32px;
+    font-family: $kosugi-maru;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    line-height: 1.2;
+    margin-top: 12px;
+    @include mq(sp){
+        font-size: 20px;
+        letter-spacing: 0.1em;
+    }
+}
+.single-post__body {
+    border-top: 2px solid $second-text;
+    margin-top: 12px;
+    width: 100%;
+    @include mq(sp){
+        border-top: 1px solid $second-text;
+    }
+}
+.single-post__body--img {
+    margin-top: 32px;
+    width: calc((640/896)*100%);
+    height: auto;
+    margin-inline: calc((128/896)*100%);
+    border-radius: 40px;
+    @include mq(ip){
+        margin-top: 24px;
+        width: 100%;
+        margin-inline: auto;
+        border-radius: 20px;
+    }
+}
+.single-post__box {
+    margin-top: 32px;
+    @include mq(sp){
+        margin-top: 24px;
+    }
+}
+.single-post__body--ttl {
+    font-size: 16px;
+    font-family: $kosugi-maru;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    line-height: 2;
+    position: relative;
+    padding-left: 16px;//ピンク線の分も考慮したpx
+}
+.single-post__body--ttl::before{
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 32px;
+    background-color: $hover-color;
+    left: 4px;
+    border-radius: 2px;
+}
+.single-post__body--txt {
+    font-size: 16px;
+    font-family: $kosugi-maru;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    line-height: 2;
+    margin-top: 8px;
+}
+.single-info .single-post__box{
+    margin-top: 36px;
+}
+.single-info .single-post__box:first-child{
+    margin-top: 8px;
+}
+.single-info .button-link{
+    @include mq(sp){
+        margin-top: 48px;
+    }
+}

@@ -1,0 +1,260 @@
+@use "../global/" as *;
+.page-introduction {
+    position: relative;
+    background-image: url(../img/top-letters__bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: auto;
+    margin-top: 134px;
+    padding-top: 114px;
+    padding-bottom: 80px;
+    border-top: 3px dotted $hover-color;
+    border-bottom: 3px dotted $hover-color;
+    @include mq(ip){
+        background-image: url(../img/top-letters__sp-bg.jpeg);
+        margin-top: 80px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding-bottom: 80px;
+        padding-top: 74px;
+    }
+}
+.page-introduction__tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.page-introduction__tab--list {
+    width: 149px;
+    height: 50px;
+    color: $hover-color;
+    border: 1px solid $hover-color;
+    border-bottom: 0;
+    background-color: #fff;
+    border-radius: 12px 12px 0 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mq(ip){
+        width: 120px;
+        height: 40px;
+        border: 1px solid $hover-color;
+        border-bottom: 0;
+        background-color: #fff;
+        border-radius: 12px 12px 0 0;
+    }
+}
+.page-introduction__tab--small {
+    font-size: 14px;
+    display: block;
+    @include mq(ip){
+        font-size: 12px;
+    }
+}
+.page-introduction__tab--list a{
+    color: $hover-color;
+    font-size: 16px;
+    font-family: $kosugi-maru;
+    font-weight: 400;
+    line-height: 1.2;
+    width: 100%;
+    height: 100%;
+    padding-top: 7px;
+    @include mq(ip){
+        font-size: 14px;
+    }
+}
+.page-introduction__tab--list.active{
+    background-color: $hover-color;
+}
+.page-introduction__tab--list.active a{
+    color: #fff;
+}
+.daycare {
+    background-color: #fff;
+    width: calc((1080/1440)*100%);
+    margin-inline: auto;
+    padding: 60px 40px;
+    border-radius: 40px;
+    display: none;
+	opacity: 0;
+    @include mq(sp){
+        padding: 24px 12px;
+        border-radius: 30px;
+        width: calc((345/375)*100%);
+    }
+}
+
+.daycare.is-active{
+    display: block;
+    animation-name: displayAnime;/*ふわっと表示させるためのアニメーション*/
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes displayAnime{
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.daycare__cat {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.daycare__cat--item {
+    width: 200px;
+    text-align: center;
+    @include mq(sp){
+        width: 150px;
+    }
+}
+.daycare__cat--link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: $hover-color;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 16px;
+    font-family: $kosugi-maru;
+    font-weight: 400;
+    line-height: 1.2;
+    border-radius: 8px;
+    border: 1px solid $hover-color;
+    @include mq(sp){
+        color: $hover-color;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-size: 14px;
+    }
+}
+.daycare__body {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.daycare__list {
+    width: 320px;
+    padding: 12px;
+    background-color: $background;
+    border-radius: 20px;
+}
+.daycare__list a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.daycare__list--img {
+    width: 100%;
+    border-radius: 20px;
+    height: 186px;
+    object-fit: cover;
+    @include mq(sp){
+        height: auto;
+        max-height: 186px;
+    }
+}
+.daycare__list-cat {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+}
+.daycare__list-cat--txt {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 4px 8px;
+    font-size: 14px;
+    font-family: $kosugi-maru;
+    font-weight: 400;
+    line-height: 1;
+    color: $text;
+}
+.daycare__list--ttl {
+    font-size: 20px;
+    font-family: $kosugi-maru;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $text;
+    margin-top: 8px;
+}
+.place__cat {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.place__cat--item {
+    width: 150px;
+    text-align: center;
+}
+.place__cat--link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: $hover-color;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 16px;
+    font-family: $kosugi-maru;
+    font-weight: 400;
+    line-height: 1.2;
+    border-radius: 8px;
+    border: 1px solid $hover-color;
+}
+.introduction__single-link {
+    max-width: 300px;
+    width: 100%;
+    height: 60px;
+    border: 2px solid #55000c;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin-top: 54px;
+    margin-inline: auto;
+    color: #55000c;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        top: 43%;
+        right: 24px;
+        transform: rotate(45deg);
+        background-color: $text;
+        width: 12px;
+        height: 2px;
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        top: 56%;
+        transform: rotate(-45deg);
+        right: 24px;
+        background-color: $text;
+        width: 12px;
+        height: 2px;
+    }
+}
+.introduction__single-link--txt {
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    font-family: $kosugi-maru;
+}

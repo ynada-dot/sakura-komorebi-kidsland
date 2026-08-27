@@ -1,0 +1,122 @@
+@use "../global/" as *;
+.page__ttl-area {
+    margin: 299px auto 0;
+    width: calc((1080/1440)*100%);
+    max-width: 1440px;
+    @include mq(sp){
+        margin-top: 299px;//-30pxしている
+    }
+    @media (max-width: 600px){
+        width: 85%;
+    }
+    @include mq(ip){
+        width: calc((345/375)*100%);
+        margin-top: 156px;//-30pxしている
+    }
+}
+.page__ttl-area--area {
+    position: relative;
+    width: 100%;
+}
+.page__ttl-area--img {
+    width: 100%;
+    height: auto;
+    @include mq(sp){
+        display: none;
+    }
+}
+.page__ttl-area--sp-img {
+    display: none;
+    @include mq(sp){
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-inline: auto;
+    }
+    @include mq(ip){
+        width: 100%;
+        max-width: 345px;
+    }
+}
+.page__ttl-are--txta-area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.page__ttl-are--ttl {
+    font-family: $kosugi-maru;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+    font-weight: 400;
+    @include mq(sp){
+        font-size: 26px;
+     }
+    @include mq(ip){
+       font-size: 20px;
+    }
+}
+.single-introduction .page__ttl-are--ttl{
+    @include mq(sp){
+        font-size: 24px;
+     }
+     @include mq(ip){
+        font-size: 18px;
+     }
+}
+.page__ttl-are--en {
+    font-family: $jost;
+    font-size: 10px;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    margin-top: 16px;
+    font-weight: bold;
+    @include mq(ip){
+       margin-top: 12px;
+    }
+}
+.ttl-area {
+    text-align: center;
+}
+.ttl-area__logo {
+    width: 108px;
+    height: 108px;
+    margin-inline: auto;
+    @include mq(sp){
+        width: 80px;
+        height: 80px;
+     }
+}
+.welcom__logo--img {
+    width: 100%;
+    height: auto;
+}
+.ttl-area__ttl {
+    margin-top: 8px;
+    font-size: 24px;
+    font-family: "Kosugi Maru", sans-serif;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    @include mq(ip){
+        margin-top: 8px;
+        font-size: 20px;
+    }
+}
+.ttl-area__en {
+    margin-top: 8px;
+    font-family: "Jost", sans-serif;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 0.2em;
+    font-size: 10px;
+    text-transform: capitalize;
+    @include mq(ip){
+        font-size: 10px;
+        margin-top: 10px;
+    }
+}
