@@ -4621,3 +4621,17 @@ a.fadeUp:hover {
 .archive-post__list-area .wp-pagenavi {
   margin-top: 32px;
 }/*# sourceMappingURL=style.css.map */
+/* ===== 大画面（1440px超）での表示調整 ===== */
+/* デザイン制作時は1440px想定だったため、それより広い画面で
+   ヘッダーの背景が左右に届かなくなる問題への対応 */
+@media screen and (min-width: 1441px) {
+  .header {
+    width: 100vw;
+    left: 0;
+    background-repeat: no-repeat;
+  }
+  .header nav > ul {
+    max-width: 1440px;
+    margin-inline: auto;
+  }
+}
